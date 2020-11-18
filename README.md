@@ -3,7 +3,14 @@ PRE-list
 
 List of (automatic) protocol reverse engineering tools/methods/approaches for network protocols
 
-# Overview
+# Table of Contents
+
+* [Overview](#overview)
+* [Tested protocols](#tested-protocols)
+* [References](#references)
+
+
+# Overview [&uarr;](#table-of-contents)
 
 NetT: input is a network trace (e.g. pcap)<br />
 ExeT: input is an execution trace (code/binary at hand)<br />
@@ -12,65 +19,127 @@ PFSM: output is protocol finite state machine (describing semantic/sequential lo
 
 | Name | Year | NetT | ExeT | PF | PFSM |
 |------|------|------|------|----|------|
-| PIP [[1]](#1) | 2004 | x |  |  |  | 
-| GAPA [[2]](#2) | 2005 |  | x | x | x | 
-| ScriptGen [[3]](#3) | 2005 | x |  |  |  | 
-| RolePlayer [[4]](#4) | 2006 | x |  |  |  | 
-| Ma et al. [[5]](#5) | 2006 | x |  |  |  | 
-| FFE/x86 [[6]](#6) | 2006 |  | x |  |  | 
-| Replayer [[7]](#7) | 2006 |  | x |  |  | 
-| Discoverer [[8]](#8) | 2007 | x |  | x |  | 
-| Polyglot [[9]](#9) | 2007 |  | x | x |  | 
-| PEXT [[10]](#10) | 2007 |  | x |  | x | 
-| Rosetta [[11]](#11) | 2007 |  | x |  |  | 
-| AutoFormat [[12]](#12) | 2008 |  | x | x |  | 
-| Tupni [[13]](#13) | 2008 |  | x | x |  | 
-| Boosting [[14]](#14) | 2008 | x |  |  |  | 
-| ConfigRE [[15]](#15) | 2008 |  | x |  |  | 
-| ReFormat [[16]](#16) | 2009 |  | x | x |  | 
-| Prospex [[17]](#17) | 2009 | x |  | x |  | 
-| Xiao et al. [[18]](#18) | 2009 |  | x |  | x | 
-| Trifilo et al. [[19]](#19) | 2009 | x |  |  | x | 
-| Antunes and Neves [[20]](#20) | 2009 | x |  |  | x | 
-| Dispatcher [[21]](#21) | 2009 |  | x |  |  | 
-| Fuzzgrind [[22]](#22) | 2009 |  | x |  |  | 
-| REWARDS [[23]](#23) | 2010 |  | x |  |  | 
-| MACE [[24]](#24) | 2010 |  | x |  |  | 
-| ReverX [[25]](#25) | 2011 | x |  |  | x | 
-| Veritas [[26]](#26) | 2011 | x |  |  | x | 
-| Biprominer [[27]](#27) | 2011 | x |  | x | x | 
-| ASAP [[28]](#28) | 2011 | x |  |  |  | 
-| Howard [[29]](#29) | 2011 |  | x |  |  | 
-| ProDecoder [[30]](#30) | 2012 | x |  | x |  | 
-| Zhang et al. [[31]](#31) | 2012 | x |  |  | x | 
-| Netzob [[32]](#32) | 2012 | x | x | x | x | 
-| PRISMA [[33]](#33) | 2012 | x |  |  |  | 
-| ARTISTE [[34]](#34) | 2012 |  | x |  |  | 
-| Wang et al. [[35]](#35) | 2013 | x |  | x |  | 
-| Laroche et al. [[36]](#36) | 2013 | x |  |  | x | 
-| AutoReEngine [[37]](#37) | 2013 | x |  | x | x | 
-| Dispatcher2 [[38]](#38) | 2013 |  | x |  |  | 
-| ProVeX [[39]](#39) | 2013 | x |  |  |  | 
-| Meng et al. [[40]](#40) | 2014 | x |  |  | x | 
-| AFL [[41]](#41) | 2014 |  | x |  |  | 
-| ProGraph [[42]](#42) | 2015 | x |  | x |  | 
-| FieldHunter [[43]](#43) | 2015 | x |  |  |  | 
-| RS Cluster [[44]](#44) | 2015 | x |  |  |  | 
-| UPCSS [[45]](#45) | 2015 | x |  |  |  | 
-| ARGOS [[46]](#46) | 2015 |  | x |  |  | 
-| PULSAR [[47]](#47) | 2015 |  |  |  |  | 
-| Cai et al. [[48]](#48) | 2016 | x |  | x |  | 
-| WASp [[49]](#49) | 2016 | x |  | x |  | 
-| PowerShell [[50]](#50) | 2017 | x |  |  |  | 
-| ProPrint [[51]](#51) | 2017 | x |  |  |  | 
-| ProHacker [[52]](#52) | 2017 | x |  |  |  | 
-| Goo et al. [[53]](#53) | 2019 | x |  | x | x | 
-| Yang et al. [[54]](#54) | 2020 | x |  | x |  | 
-| Sun et al. [[55]](#55) | 2020 |  |  |  |  | 
-| Shim et al. [[56]](#56) | 2020 | x |  | x |  | 
-| IPART [[57]](#57) | 2020 | x |  | x |  | 
+| PIP [[1]](#1) | 2004 | x |  |  |  |
+| GAPA [[2]](#2) | 2005 |  | x | x | x |
+| ScriptGen [[3]](#3) | 2005 | x |  |  |  |
+| RolePlayer [[4]](#4) | 2006 | x |  |  |  |
+| Ma et al. [[5]](#5) | 2006 | x |  |  |  |
+| FFE/x86 [[6]](#6) | 2006 |  | x |  |  |
+| Replayer [[7]](#7) | 2006 |  | x |  |  |
+| Discoverer [[8]](#8) | 2007 | x |  | x |  |
+| Polyglot [[9]](#9) | 2007 |  | x | x |  |
+| PEXT [[10]](#10) | 2007 |  | x |  | x |
+| Rosetta [[11]](#11) | 2007 |  | x |  |  |
+| AutoFormat [[12]](#12) | 2008 |  | x | x |  |
+| Tupni [[13]](#13) | 2008 |  | x | x |  |
+| Boosting [[14]](#14) | 2008 | x |  |  |  |
+| ConfigRE [[15]](#15) | 2008 |  | x |  |  |
+| ReFormat [[16]](#16) | 2009 |  | x | x |  |
+| Prospex [[17]](#17) | 2009 | x |  | x |  |
+| Xiao et al. [[18]](#18) | 2009 |  | x |  | x |
+| Trifilo et al. [[19]](#19) | 2009 | x |  |  | x |
+| Antunes and Neves [[20]](#20) | 2009 | x |  |  | x |
+| Dispatcher [[21]](#21) | 2009 |  | x |  |  |
+| Fuzzgrind [[22]](#22) | 2009 |  | x |  |  |
+| REWARDS [[23]](#23) | 2010 |  | x |  |  |
+| MACE [[24]](#24) | 2010 |  | x |  |  |
+| ReverX [[25]](#25) | 2011 | x |  |  | x |
+| Veritas [[26]](#26) | 2011 | x |  |  | x |
+| Biprominer [[27]](#27) | 2011 | x |  | x | x |
+| ASAP [[28]](#28) | 2011 | x |  |  |  |
+| Howard [[29]](#29) | 2011 |  | x |  |  |
+| ProDecoder [[30]](#30) | 2012 | x |  | x |  |
+| Zhang et al. [[31]](#31) | 2012 | x |  |  | x |
+| Netzob [[32]](#32) | 2012 | x | x | x | x |
+| PRISMA [[33]](#33) | 2012 | x |  |  |  |
+| ARTISTE [[34]](#34) | 2012 |  | x |  |  |
+| Wang et al. [[35]](#35) | 2013 | x |  | x |  |
+| Laroche et al. [[36]](#36) | 2013 | x |  |  | x |
+| AutoReEngine [[37]](#37) | 2013 | x |  | x | x |
+| Dispatcher2 [[38]](#38) | 2013 |  | x |  |  |
+| ProVeX [[39]](#39) | 2013 | x |  |  |  |
+| Meng et al. [[40]](#40) | 2014 | x |  |  | x |
+| AFL [[41]](#41) | 2014 |  | x |  |  |
+| ProGraph [[42]](#42) | 2015 | x |  | x |  |
+| FieldHunter [[43]](#43) | 2015 | x |  |  |  |
+| RS Cluster [[44]](#44) | 2015 | x |  |  |  |
+| UPCSS [[45]](#45) | 2015 | x |  |  |  |
+| ARGOS [[46]](#46) | 2015 |  | x |  |  |
+| PULSAR [[47]](#47) | 2015 |  |  |  |  |
+| Cai et al. [[48]](#48) | 2016 | x |  | x |  |
+| WASp [[49]](#49) | 2016 | x |  | x |  |
+| PowerShell [[50]](#50) | 2017 | x |  |  |  |
+| ProPrint [[51]](#51) | 2017 | x |  |  |  |
+| ProHacker [[52]](#52) | 2017 | x |  |  |  |
+| Goo et al. [[53]](#53) | 2019 | x |  | x | x |
+| Yang et al. [[54]](#54) | 2020 | x |  | x |  |
+| Sun et al. [[55]](#55) | 2020 |  |  |  |  |
+| Shim et al. [[56]](#56) | 2020 | x |  | x |  |
+| IPART [[57]](#57) | 2020 | x |  | x |  |
 
-# References
+# Tested protocols [&uarr;](#table-of-contents)
+
+| Name | Year | Text-based | Binary-based | Hybrid |
+|------|------|------------|--------------|--------|
+| PIP [[1]](#1) | 2004 | HTTP |  |  |
+| GAPA [[2]](#2) | 2005 | HTTP |  |  |
+| ScriptGen [[3]](#3) | 2005 | HTTP | NetBIOS |  |
+| RolePlayer [[4]](#4) | 2006 | HTTP, FTP, SMTP, NFS, TFTP | DNS, BitTorrent, QQ, NetBios | SMB, CIFS |
+| Ma et al. [[5]](#5) | 2006 | HTTP, FTP, SMTP, HTTPS (TCP-Protos) | DNS, NetBIOS, SrvLoc (UDP-Protos) |  |
+| FFE/x86 [[6]](#6) | 2006 |  |  |  |
+| Replayer [[7]](#7) | 2006 |  |  |  |
+| Discoverer [[8]](#8) | 2007 | HTTP | RPC | SMB, CIFS |
+| Polyglot [[9]](#9) | 2007 | HTTP, Samba, ICQ | DNS, IRC |  |
+| PEXT [[10]](#10) | 2007 | FTP |  |  |
+| Rosetta [[11]](#11) | 2007 |  |  |  |
+| AutoFormat [[12]](#12) | 2008 | HTTP, SIP | DHCP, RIP, OSPF | SMB, CIFS |
+| Tupni [[13]](#13) | 2008 | HTTP, FTP | RPC, DNS, TFTP |  |
+| Boosting [[14]](#14) | 2008 |  | DNS |  |
+| ConfigRE [[15]](#15) | 2008 |  |  |  |
+| ReFormat [[16]](#16) | 2009 | HTTP, MIME | IRC |  |
+| Prospex [[17]](#17) | 2009 | SMTP, SIP | SMB |  |
+| Xiao et al. [[18]](#18) | 2009 | HTTP, FTP, SMTP |  |  |
+| Trifilo et al. [[19]](#19) | 2009 |  | TCP, DHCP, ARP, KAD |  |
+| Antunes and Neves [[20]](#20) | 2009 | FTP |  |  |
+| Dispatcher [[21]](#21) | 2009 | HTTP, FTP, ICQ | DNS |  |
+| Fuzzgrind [[22]](#22) | 2009 |  |  |  |
+| REWARDS [[23]](#23) | 2010 |  |  |  |
+| MACE [[24]](#24) | 2010 |  |  |  |
+| ReverX [[25]](#25) | 2011 | FTP |  |  |
+| Veritas [[26]](#26) | 2011 | SMTP | PPLIVE, XUNLEI |  |
+| Biprominer [[27]](#27) | 2011 |  | XUNLEI, QQLive, SopCast |  |
+| ASAP [[28]](#28) | 2011 | HTTP, FTP, IRC, TFTP |  |  |
+| Howard [[29]](#29) | 2011 |  |  |  |
+| ProDecoder [[30]](#30) | 2012 | SMTP, SIP | SMB |  |
+| Zhang et al. [[31]](#31) | 2012 | HTTP, SNMP, ISAKMP |  |  |
+| Netzob [[32]](#32) | 2012 | FTP, Samba | SMB |  |
+| PRISMA [[33]](#33) | 2012 |  |  |  |
+| ARTISTE [[34]](#34) | 2012 |  |  |  |
+| Wang et al. [[35]](#35) | 2013 | ICMP | ARP |  |
+| Laroche et al. [[36]](#36) | 2013 | FTP | DHCP |  |
+| AutoReEngine [[37]](#37) | 2013 | HTTP, FTP, SMTP, POP3 | DNS, NetBIOS |  |
+| Dispatcher2 [[38]](#38) | 2013 | HTTP, FTP, ICQ | DNS | SMB |
+| ProVeX [[39]](#39) | 2013 | HTTP, SMTP, IMAP | DNS, VoIP, XMPP |  |
+| Meng et al. [[40]](#40) | 2014 |  | TCP, ARP |  |
+| AFL [[41]](#41) | 2014 |  |  |  |
+| ProGraph [[42]](#42) | 2015 | HTTP | DNS, BitTorrent, WeChat |  |
+| FieldHunter [[43]](#43) | 2015 | MSNP | DNS |  |
+| RS Cluster [[44]](#44) | 2015 | FTP, SMTP, POP3, HTTPS | DNS, XunLei, BitTorrent, BitSpirit, QQ, eMule |  |
+| UPCSS [[45]](#45) | 2015 | HTTP, FTP, SMTP, POP3, IMAP | DNS, SSL, SSH | SMB |
+| ARGOS [[46]](#46) | 2015 |  |  |  |
+| PULSAR [[47]](#47) | 2015 |  |  |  |
+| Cai et al. [[48]](#48) | 2016 | HTTP, SSDP | DNS, BitTorrent, QQ, NetBios |  |
+| WASp [[49]](#49) | 2016 |  |  |  |
+| PowerShell [[50]](#50) | 2017 |  | ARP, OSPF, DHCP, STP |  |
+| ProPrint [[51]](#51) | 2017 |  |  |  |
+| ProHacker [[52]](#52) | 2017 |  |  |  |
+| Goo et al. [[53]](#53) | 2019 | HTTP | DNS |  |
+| Yang et al. [[54]](#54) | 2020 |  | IPv4, TCP |  |
+| Sun et al. [[55]](#55) | 2020 |  |  |  |
+| Shim et al. [[56]](#56) | 2020 | FTP | Modbus/TCP, Ethernet/IP |  |
+| IPART [[57]](#57) | 2020 |  | Modbus, IEC104, Ethernet/IP |  |
+
+# References [&uarr;](#table-of-contents)
 
 #### [1]
 M. Beddoe, “The protocol informatics project,” 2004, http://www.4tphi.net/∼awalters/PI/PI.html. [PDF](http://www.4tphi.net/~awalters/PI/pi.pdf)

@@ -38,7 +38,13 @@ def main(delimiter):
         f.write("List of (automatic) protocol reverse engineering tools/methods/approaches for " + \
                 "network protocols\n")
 
-        f.write("\n# Overview\n\n")
+        f.write("\n# Table of Contents\n\n")
+
+        f.write("* [Overview](#overview)\n")
+        f.write("* [Tested protocols](#tested-protocols)\n")
+        f.write("* [References](#references)\n\n")
+
+        f.write("\n# Overview [&uarr;](#table-of-contents)\n\n")
         f.write("NetT: input is a network trace (e.g. pcap)<br />\n" + \
                 "ExeT: input is an execution trace (code/binary at hand)<br />\n" + \
                 "PF: output is protocol format (describing the syntax)<br />\n" + \
@@ -54,7 +60,17 @@ def main(delimiter):
                     paper['PF'] + " | " + \
                     paper['PFSM'] + " |\n")
 
-        f.write("\n# References\n\n")
+        f.write("\n# Tested protocols [&uarr;](#table-of-contents)\n\n")
+        f.write("| Name | Year | Text-based | Binary-based | Hybrid |\n")
+        f.write("|------|------|------------|--------------|--------|\n")
+        for cite, paper in papers:
+            f.write("| " + paper['Name'] + " [[" + str(cite) + "]](#" + str(cite) + ") | " + \
+                    paper['Year'] + " | " + \
+                    paper['Text-based'] + " | " + \
+                    paper['Binary-based'] + " | " + \
+                    paper['Hybrid'] + " |\n")
+
+        f.write("\n# References [&uarr;](#table-of-contents)\n\n")
         for cite, paper in papers:
             f.write('#### [' + str(cite) + ']\n')
             f.write(paper['Paper(s)'])
