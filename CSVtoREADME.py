@@ -22,6 +22,13 @@ import argparse
 import csv
 
 
+def checkmark(char):
+    if char:
+        return "&#10004;"
+    else:
+        return ""
+
+
 def main(delimiter):
 
     papers = []
@@ -76,10 +83,10 @@ def main(delimiter):
         for cite, paper in papers:
             f.write("| " + paper['Name'] + " [[" + str(cite) + "]](#" + str(cite) + ") | " + \
                     paper['Year'] + " | " + \
-                    paper['NetT'] + " | " + \
-                    paper['ExeT'] + " | " + \
-                    paper['PF'] + " | " + \
-                    paper['PFSM'] + " | " + \
+                    checkmark(paper['NetT']) + " | " + \
+                    checkmark(paper['ExeT']) + " | " + \
+                    checkmark(paper['PF']) + " | " + \
+                    checkmark(paper['PFSM']) + " | " + \
                     paper['Other Output'] + " |\n")
 
         f.write("\n# Tested protocols [&uarr;](#table-of-contents)\n\n")
