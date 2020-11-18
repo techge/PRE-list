@@ -1,8 +1,16 @@
 PRE-list
 ========
 
-List of (automatic) protocol reverse engineering tools/methods/approaches for network protocols
-<br/>This is a collection of 57 scientific papers about (automatic) protocol reverse engineering (PRE) methods and tools. The papers are categorized into different groups so that it is more easy to get an overview of existing solutions based on the problem you want to tackle.<br/>Please help extending this collection by using the `tools.ods`.
+List of (automatic) protocol reverse engineering tools/methods/approaches for network protocols<br/><br/>
+
+This is a collection of 57 scientific papers about (automatic) protocol reverse engineering (PRE) methods and tools. The papers are categorized into different groups so that it is more easy to get an overview of existing solutions based on the problem you want to tackle.<br/><br/>
+
+The collection was started with help of the following two surveys and got extended afterwards:
+
+* J. Duchêne, C. Le Guernic, E. Alata, V. Nicomette, and M. Kaâniche, “State of the art of network protocol reverse engineering tools,” Journal of Computer Virology and Hacking Techniques, vol. 14, no. 1, pp. 53–68, Feb. 2018, doi: 10.1007/s11416-016-0289-8.
+* B. D. Sija, Y.-H. Goo, K.-S. Shim, H. Hasanova, and M.-S. Kim, “A Survey of Automatic Protocol Reverse Engineering Approaches, Methods, and Tools on the Inputs and Outputs View,” Security and Communication Networks, vol. 2018, pp. 1–17, 2018, doi: 10.1155/2018/8370341.
+
+Please help extending this collection by adding papers to the `tools.ods`.
 
 
 # Table of Contents
