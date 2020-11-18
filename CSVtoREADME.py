@@ -36,13 +36,13 @@ def main(delimiter):
         f.write("PRE-list\n")
         f.write("========\n\n")
         f.write("List of (automatic) protocol reverse engineering tools/methods/approaches for " + \
-                "network protocols<br/><br/>\n\n")
+                "network protocols<br/>\n\n")
 
         f.write("This is a collection of " + str(len(papers)) + " scientific papers about " + \
                 "(automatic) protocol reverse engineering (PRE) methods and tools. " + \
                 "The papers are categorized into different groups so that it is more easy " + \
                 "to get an overview of existing solutions based on the problem you want to " + \
-                "tackle.<br/><br/>\n\n" + \
+                "tackle.<br/>\n\n" + \
                 "The collection was started with help of the following two surveys and got " + \
                 "extended afterwards:\n\n" + \
                 "* J. Duchêne, C. Le Guernic, E. Alata, V. Nicomette, and M. Kaâniche, “State of the art of network protocol reverse engineering tools,” Journal of Computer Virology and Hacking Techniques, vol. 14, no. 1, pp. 53–68, Feb. 2018, doi: 10.1007/s11416-016-0289-8.\n" + \
@@ -87,15 +87,15 @@ def main(delimiter):
                     paper['Other Output'] + " |\n")
 
         f.write("\n# Tested protocols [&uarr;](#table-of-contents)\n\n")
-        f.write("| Name | Year | Text-based | Binary-based | Hybrid | Others |\n")
-        f.write("|------|------|------------|--------------|--------|--------|\n")
+        f.write("| Name | Year | Text-based | Binary-based | Hybrid | Other Protocols |\n")
+        f.write("|------|------|------------|--------------|--------|-----------------|\n")
         for cite, paper in papers:
             f.write("| " + paper['Name'] + " [[" + str(cite) + "]](#" + str(cite) + ") | " + \
                     paper['Year'] + " | " + \
                     paper['Text-based'] + " | " + \
                     paper['Binary-based'] + " | " + \
                     paper['Hybrid'] + " | " + \
-                    paper['Others'] + " |\n")
+                    paper['Other Protocols'] + " |\n")
 
         f.write("\n# Source Code [&uarr;](#table-of-contents)\n\n")
         f.write("Most papers do not provide the code used in the research. For the following " + \
@@ -106,7 +106,7 @@ def main(delimiter):
             if paper['Source Code']:
                 f.write("| " + paper['Name'] + " [[" + str(cite) + "]](#" + str(cite) + ") | " + \
                         paper['Year'] + " | " + \
-                        paper['Website'] + " |\n")
+                        paper['Source Code'] + " |\n")
 
         f.write("\n# References [&uarr;](#table-of-contents)\n\n")
         for cite, paper in papers:
