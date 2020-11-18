@@ -36,39 +36,72 @@ def main(delimiter):
         f.write("PRE-list\n")
         f.write("========\n\n")
         f.write("List of (automatic) protocol reverse engineering tools/methods/approaches for " + \
-                "network protocols\n")
+                "network protocols\n<br/>")
+
+        f.write("This is a collection of " + str(len(papers)) + " scientific papers about " + \
+                "(automatic) protocol reverse engineering (PRE) methods and tools. " + \
+                "The papers are categorized into different groups so that it is more easy " + \
+                "to get an overview of existing solutions based on the problem you want to " + \
+                "tackle.<br/>Please help extending this collection by using the `tools.ods`.\n\n")
 
         f.write("\n# Table of Contents\n\n")
 
-        f.write("* [Overview](#overview)\n")
-        f.write("* [Tested protocols](#tested-protocols)\n")
-        f.write("* [References](#references)\n\n")
+        f.write("* [Overview](#overview-)\n")
+        f.write("* [Input and Output](#input-and-output-)\n")
+        f.write("* [Tested protocols](#tested-protocols-)\n")
+        f.write("* [Source code](#source-code-)\n")
+        f.write("* [References](#references-)\n\n")
 
         f.write("\n# Overview [&uarr;](#table-of-contents)\n\n")
-        f.write("NetT: input is a network trace (e.g. pcap)<br />\n" + \
-                "ExeT: input is an execution trace (code/binary at hand)<br />\n" + \
-                "PF: output is protocol format (describing the syntax)<br />\n" + \
-                "PFSM: output is protocol finite state machine (describing semantic/sequential " + \
-                "logic)<br />\n\n")
-        f.write("| Name | Year | NetT | ExeT | PF | PFSM |\n")
-        f.write("|------|------|------|------|----|------|\n")
+        f.write("| Name | Year | NetT | ExeT | PF | PFSM | Other Output |\n")
+        f.write("|------|------|------|------|----|------|--------------|\n")
         for cite, paper in papers:
             f.write("| " + paper['Name'] + " [[" + str(cite) + "]](#" + str(cite) + ") | " + \
                     paper['Year'] + " | " + \
                     paper['NetT'] + " | " + \
                     paper['ExeT'] + " | " + \
                     paper['PF'] + " | " + \
-                    paper['PFSM'] + " |\n")
+                    paper['PFSM'] + " | " + \
+                    paper['Other Output'] + " |\n")
+
+        f.write("\n# Input and Output [&uarr;](#table-of-contents)\n\n")
+        f.write("NetT: input is a network trace (e.g. pcap)<br />\n" + \
+                "ExeT: input is an execution trace (code/binary at hand)<br />\n" + \
+                "PF: output is protocol format (describing the syntax)<br />\n" + \
+                "PFSM: output is protocol finite state machine (describing semantic/sequential " + \
+                "logic)<br />\n\n")
+        f.write("| Name | Year | NetT | ExeT | PF | PFSM | Other Output |\n")
+        f.write("|------|------|------|------|----|------|--------------|\n")
+        for cite, paper in papers:
+            f.write("| " + paper['Name'] + " [[" + str(cite) + "]](#" + str(cite) + ") | " + \
+                    paper['Year'] + " | " + \
+                    paper['NetT'] + " | " + \
+                    paper['ExeT'] + " | " + \
+                    paper['PF'] + " | " + \
+                    paper['PFSM'] + " | " + \
+                    paper['Other Output'] + " |\n")
 
         f.write("\n# Tested protocols [&uarr;](#table-of-contents)\n\n")
-        f.write("| Name | Year | Text-based | Binary-based | Hybrid |\n")
-        f.write("|------|------|------------|--------------|--------|\n")
+        f.write("| Name | Year | Text-based | Binary-based | Hybrid | Others |\n")
+        f.write("|------|------|------------|--------------|--------|--------|\n")
         for cite, paper in papers:
             f.write("| " + paper['Name'] + " [[" + str(cite) + "]](#" + str(cite) + ") | " + \
                     paper['Year'] + " | " + \
                     paper['Text-based'] + " | " + \
                     paper['Binary-based'] + " | " + \
-                    paper['Hybrid'] + " |\n")
+                    paper['Hybrid'] + " | " + \
+                    paper['Others'] + " |\n")
+
+        f.write("\n# Source Code [&uarr;](#table-of-contents)\n\n")
+        f.write("Most papers do not provide the code used in the research. For the following " + \
+                "papers exists (example) code.<br/>\n")
+        f.write("| Name | Year | Source Code |\n")
+        f.write("|------|------|-------------|\n")
+        for cite, paper in papers:
+            if paper['Source Code']:
+                f.write("| " + paper['Name'] + " [[" + str(cite) + "]](#" + str(cite) + ") | " + \
+                        paper['Year'] + " | " + \
+                        paper['Website'] + " |\n")
 
         f.write("\n# References [&uarr;](#table-of-contents)\n\n")
         for cite, paper in papers:
