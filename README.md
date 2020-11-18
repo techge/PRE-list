@@ -24,65 +24,65 @@ Please help extending this collection by adding papers to the `tools.ods`.
 
 # Overview [&uarr;](#table-of-contents)
 
-| Name | Year | NetT | ExeT | PF | PFSM | Other Output |
-|------|------|------|------|----|------|--------------|
-| PIP [[1]](#1) | 2004 | x |  |  |  | Keywords/ fields |
-| GAPA [[2]](#2) | 2005 |  | x | x | x |  |
-| ScriptGen [[3]](#3) | 2005 | x |  |  |  | Dialogs/scripts |
-| RolePlayer [[4]](#4) | 2006 | x |  |  |  | Dialogs/scripts |
-| Ma et al. [[5]](#5) | 2006 | x |  |  |  | App-identification |
-| FFE/x86 [[6]](#6) | 2006 |  | x |  |  |  |
-| Replayer [[7]](#7) | 2006 |  | x |  |  |  |
-| Discoverer [[8]](#8) | 2007 | x |  | x |  |  |
-| Polyglot [[9]](#9) | 2007 |  | x | x |  |  |
-| PEXT [[10]](#10) | 2007 |  | x |  | x |  |
-| Rosetta [[11]](#11) | 2007 |  | x |  |  |  |
-| AutoFormat [[12]](#12) | 2008 |  | x | x |  |  |
-| Tupni [[13]](#13) | 2008 |  | x | x |  |  |
-| Boosting [[14]](#14) | 2008 | x |  |  |  | Field(s) |
-| ConfigRE [[15]](#15) | 2008 |  | x |  |  |  |
-| ReFormat [[16]](#16) | 2009 |  | x | x |  |  |
-| Prospex [[17]](#17) | 2009 | x |  | x |  |  |
-| Xiao et al. [[18]](#18) | 2009 |  | x |  | x |  |
-| Trifilo et al. [[19]](#19) | 2009 | x |  |  | x |  |
-| Antunes and Neves [[20]](#20) | 2009 | x |  |  | x |  |
-| Dispatcher [[21]](#21) | 2009 |  | x |  |  | C&C malware |
-| Fuzzgrind [[22]](#22) | 2009 |  | x |  |  |  |
-| REWARDS [[23]](#23) | 2010 |  | x |  |  |  |
-| MACE [[24]](#24) | 2010 |  | x |  |  |  |
-| ReverX [[25]](#25) | 2011 | x |  |  | x |  |
-| Veritas [[26]](#26) | 2011 | x |  |  | x |  |
-| Biprominer [[27]](#27) | 2011 | x |  | x | x |  |
-| ASAP [[28]](#28) | 2011 | x |  |  |  | Semantics |
-| Howard [[29]](#29) | 2011 |  | x |  |  |  |
-| ProDecoder [[30]](#30) | 2012 | x |  | x |  |  |
-| Zhang et al. [[31]](#31) | 2012 | x |  |  | x |  |
-| Netzob [[32]](#32) | 2012 | x | x | x | x |  |
-| PRISMA [[33]](#33) | 2012 | x |  |  |  |  |
-| ARTISTE [[34]](#34) | 2012 |  | x |  |  |  |
-| Wang et al. [[35]](#35) | 2013 | x |  | x |  |  |
-| Laroche et al. [[36]](#36) | 2013 | x |  |  | x |  |
-| AutoReEngine [[37]](#37) | 2013 | x |  | x | x |  |
-| Dispatcher2 [[38]](#38) | 2013 |  | x |  |  | C&C malware |
-| ProVeX [[39]](#39) | 2013 | x |  |  |  | Signatures |
-| Meng et al. [[40]](#40) | 2014 | x |  |  | x |  |
-| AFL [[41]](#41) | 2014 |  | x |  |  |  |
-| ProGraph [[42]](#42) | 2015 | x |  | x |  |  |
-| FieldHunter [[43]](#43) | 2015 | x |  |  |  | Fields |
-| RS Cluster [[44]](#44) | 2015 | x |  |  |  | Grouped-messages |
-| UPCSS [[45]](#45) | 2015 | x |  |  |  | Proto-classification |
-| ARGOS [[46]](#46) | 2015 |  | x |  |  |  |
-| PULSAR [[47]](#47) | 2015 |  |  |  |  |  |
-| Cai et al. [[48]](#48) | 2016 | x |  | x |  |  |
-| WASp [[49]](#49) | 2016 | x |  | x |  |  |
-| PowerShell [[50]](#50) | 2017 | x |  |  |  | Dialogs/scripts |
-| ProPrint [[51]](#51) | 2017 | x |  |  |  | Fingerprints |
-| ProHacker [[52]](#52) | 2017 | x |  |  |  | Keywords |
-| Goo et al. [[53]](#53) | 2019 | x |  | x | x |  |
-| Yang et al. [[54]](#54) | 2020 | x |  | x |  |  |
-| Sun et al. [[55]](#55) | 2020 |  |  |  |  |  |
-| Shim et al. [[56]](#56) | 2020 | x |  | x |  |  |
-| IPART [[57]](#57) | 2020 | x |  | x |  |  |
+| Name | Year | Method/Approach used |
+|------|------|----------------------|
+| PIP [[1]](#1) | 2004 | Sequence alignment algorithm of Needleman and Wunsch 1970 and Smith and Waterma 1981 applied |
+| GAPA [[2]](#2) | 2005 | Protocol analyzer and open language that uses the protocol analyzer specification Spec → it is meant to be integrated in monitoring and analyzing tools |
+| ScriptGen [[3]](#3) | 2005 | Byte-wise sequence alignment (find variable fields in messages) |
+| RolePlayer [[4]](#4) | 2006 | Byte-wise sequence alignment (find variable fields in messages) |
+| Ma et al. [[5]](#5) | 2006 |  |
+| FFE/x86 [[6]](#6) | 2006 |  |
+| Replayer [[7]](#7) | 2006 |  |
+| Discoverer [[8]](#8) | 2007 | Recursive clustering and type-based sequence alignment |
+| Polyglot [[9]](#9) | 2007 | Dynamic analysis (execution trace and network trace) |
+| PEXT [[10]](#10) | 2007 |  |
+| Rosetta [[11]](#11) | 2007 |  |
+| AutoFormat [[12]](#12) | 2008 | Dynamic analysis (execution trace and network trace) |
+| Tupni [[13]](#13) | 2008 | Dynamic analysis (execution trace and network trace) |
+| Boosting [[14]](#14) | 2008 |  |
+| ConfigRE [[15]](#15) | 2008 |  |
+| ReFormat [[16]](#16) | 2009 |  |
+| Prospex [[17]](#17) | 2009 |  |
+| Xiao et al. [[18]](#18) | 2009 |  |
+| Trifilo et al. [[19]](#19) | 2009 |  |
+| Antunes and Neves [[20]](#20) | 2009 |  |
+| Dispatcher [[21]](#21) | 2009 | Dynamic analysis |
+| Fuzzgrind [[22]](#22) | 2009 |  |
+| REWARDS [[23]](#23) | 2010 |  |
+| MACE [[24]](#24) | 2010 |  |
+| ReverX [[25]](#25) | 2011 |  |
+| Veritas [[26]](#26) | 2011 |  |
+| Biprominer [[27]](#27) | 2011 | Statistical analysis including three phases, learning phase, labeling phase and transition probability model building phase. See [this figure](img/biprominer.png). |
+| ASAP [[28]](#28) | 2011 |  |
+| Howard [[29]](#29) | 2011 |  |
+| ProDecoder [[30]](#30) | 2012 |  |
+| Zhang et al. [[31]](#31) | 2012 |  |
+| Netzob [[32]](#32) | 2012 | Sie [this figure](https://github.com/netzob/netzob/blob/4a72c0cbd6d1e7b997b2b8ad170b7a38e400dfca/netzob/doc/documentation/source/netzob_archi.png) |
+| PRISMA [[33]](#33) | 2012 |  |
+| ARTISTE [[34]](#34) | 2012 |  |
+| Wang et al. [[35]](#35) | 2013 |  |
+| Laroche et al. [[36]](#36) | 2013 |  |
+| AutoReEngine [[37]](#37) | 2013 | Apriori Algorithm (based on Agrawal/Srikant 1994). Identify fields and keywords by considering the amount of occurrences. Message formats are considered as series of keywords. State machines are derived from labeled messages or frequent subsequences. See [this figure](img/autoreengine.png) for clarification. |
+| Dispatcher2 [[38]](#38) | 2013 |  |
+| ProVeX [[39]](#39) | 2013 |  |
+| Meng et al. [[40]](#40) | 2014 |  |
+| AFL [[41]](#41) | 2014 |  |
+| ProGraph [[42]](#42) | 2015 |  |
+| FieldHunter [[43]](#43) | 2015 |  |
+| RS Cluster [[44]](#44) | 2015 |  |
+| UPCSS [[45]](#45) | 2015 |  |
+| ARGOS [[46]](#46) | 2015 |  |
+| PULSAR [[47]](#47) | 2015 | Reverse engineer network protocols with the aim to fuzz them with thus knowledge |
+| Cai et al. [[48]](#48) | 2016 |  |
+| WASp [[49]](#49) | 2016 |  |
+| PowerShell [[50]](#50) | 2017 |  |
+| ProPrint [[51]](#51) | 2017 |  |
+| ProHacker [[52]](#52) | 2017 |  |
+| Goo et al. [[53]](#53) | 2019 |  |
+| Yang et al. [[54]](#54) | 2020 | Using deep-learning (LSTM-FCN) for reversing binary protocols |
+| Sun et al. [[55]](#55) | 2020 | "To measure format similarity of unknown protocol messages in a proper granularity, we propose relative measuremnets, Token Format Distance (TFD) and Message Format Distance (MFD), based on core rules of Augmented Backus-Naur Form (ABND)." for clustering process Silhouette Coefficient and Dunn Index are used. density based cluster algorithm DBSCAN is used for clustering of messages |
+| Shim et al. [[56]](#56) | 2020 | Follow up on Goo et al. 2019 |
+| IPART [[57]](#57) | 2020 |  |
 
 # Input and Output [&uarr;](#table-of-contents)
 

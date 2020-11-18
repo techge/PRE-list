@@ -58,16 +58,12 @@ def main(delimiter):
         f.write("* [References](#references-)\n\n")
 
         f.write("\n# Overview [&uarr;](#table-of-contents)\n\n")
-        f.write("| Name | Year | NetT | ExeT | PF | PFSM | Other Output |\n")
-        f.write("|------|------|------|------|----|------|--------------|\n")
+        f.write("| Name | Year | Method/Approach used |\n")
+        f.write("|------|------|----------------------|\n")
         for cite, paper in papers:
             f.write("| " + paper['Name'] + " [[" + str(cite) + "]](#" + str(cite) + ") | " + \
                     paper['Year'] + " | " + \
-                    paper['NetT'] + " | " + \
-                    paper['ExeT'] + " | " + \
-                    paper['PF'] + " | " + \
-                    paper['PFSM'] + " | " + \
-                    paper['Other Output'] + " |\n")
+                    paper['Approach used'] + " |\n")
 
         f.write("\n# Input and Output [&uarr;](#table-of-contents)\n\n")
         f.write("NetT: input is a network trace (e.g. pcap)<br />\n" + \
