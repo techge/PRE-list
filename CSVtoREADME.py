@@ -30,7 +30,7 @@ def main(delimiter):
         for row in reader:
             papers.append(row)
 
-    papers = list(enumerate(sorted(papers, key=lambda k: k['Name']), start=1))
+    papers = list(enumerate(sorted(papers, key=lambda k: k['Year']), start=1))
 
     with open('README.md', 'w') as f:
         f.write("PRE-list\n")
@@ -52,7 +52,7 @@ def main(delimiter):
                     paper['NetT'] + " | " + \
                     paper['ExeT'] + " | " + \
                     paper['PF'] + " | " + \
-                    paper['PFSM'] + " | \n")
+                    paper['PFSM'] + " |\n")
 
         f.write("\n# References\n\n")
         for cite, paper in papers:
