@@ -3,7 +3,7 @@ PRE-list
 
 List of (automatic) protocol reverse engineering tools/methods/approaches for network protocols<br/>
 
-This is a collection of 57 scientific papers about (automatic) protocol reverse engineering (PRE) methods and tools. The papers are categorized into different groups so that it is more easy to get an overview of existing solutions based on the problem you want to tackle.<br/>
+This is a collection of 58 scientific papers about (automatic) protocol reverse engineering (PRE) methods and tools. The papers are categorized into different groups so that it is more easy to get an overview of existing solutions based on the problem you want to tackle.<br/>
 
 The collection was started with help of the following two surveys and got extended afterwards:
 
@@ -78,11 +78,12 @@ Please help extending this collection by adding papers to the `tools.ods`.
 | PowerShell [[50]](#50) | 2017 |  |
 | ProPrint [[51]](#51) | 2017 |  |
 | ProHacker [[52]](#52) | 2017 |  |
-| Goo et al. [[53]](#53) | 2019 |  |
-| Yang et al. [[54]](#54) | 2020 | Using deep-learning (LSTM-FCN) for reversing binary protocols |
-| Sun et al. [[55]](#55) | 2020 | "To measure format similarity of unknown protocol messages in a proper granularity, we propose relative measuremnets, Token Format Distance (TFD) and Message Format Distance (MFD), based on core rules of Augmented Backus-Naur Form (ABND)." for clustering process Silhouette Coefficient and Dunn Index are used. density based cluster algorithm DBSCAN is used for clustering of messages |
-| Shim et al. [[56]](#56) | 2020 | Follow up on Goo et al. 2019 |
-| IPART [[57]](#57) | 2020 |  |
+| Goo et al. [[53]](#53) | 2019 | Apriori based: Finding „frequent contiguous common subsequences“ via new Contiguous Sequential Pattern (CSP) algorithm which is based on Generalized Sequential Pattern (GSP) and other Apriori algorithms. CSP is used three times hierarchically to extract different information/fields based on previous results. |
+| Universal Radio Hacker [[54]](#54) | 2019 |  |
+| Yang et al. [[55]](#55) | 2020 | Using deep-learning (LSTM-FCN) for reversing binary protocols |
+| Sun et al. [[56]](#56) | 2020 | "To measure format similarity of unknown protocol messages in a proper granularity, we propose relative measuremnets, Token Format Distance (TFD) and Message Format Distance (MFD), based on core rules of Augmented Backus-Naur Form (ABND)." for clustering process Silhouette Coefficient and Dunn Index are used. density based cluster algorithm DBSCAN is used for clustering of messages |
+| Shim et al. [[57]](#57) | 2020 | Follow up on Goo et al. 2019 |
+| IPART [[58]](#58) | 2020 |  |
 
 # Input and Output [&uarr;](#table-of-contents)
 
@@ -146,10 +147,11 @@ PFSM: output is protocol finite state machine (describing semantic/sequential lo
 | ProPrint [[51]](#51) | 2017 | &#10004; |  |  |  | Fingerprints |
 | ProHacker [[52]](#52) | 2017 | &#10004; |  |  |  | Keywords |
 | Goo et al. [[53]](#53) | 2019 | &#10004; |  | &#10004; | &#10004; |  |
-| Yang et al. [[54]](#54) | 2020 | &#10004; |  | &#10004; |  |  |
-| Sun et al. [[55]](#55) | 2020 |  |  |  |  |  |
-| Shim et al. [[56]](#56) | 2020 | &#10004; |  | &#10004; |  |  |
-| IPART [[57]](#57) | 2020 | &#10004; |  | &#10004; |  |  |
+| Universal Radio Hacker [[54]](#54) | 2019 | &#10004; |  |  |  |  |
+| Yang et al. [[55]](#55) | 2020 | &#10004; |  | &#10004; |  |  |
+| Sun et al. [[56]](#56) | 2020 |  |  |  |  |  |
+| Shim et al. [[57]](#57) | 2020 | &#10004; |  | &#10004; |  |  |
+| IPART [[58]](#58) | 2020 | &#10004; |  | &#10004; |  |  |
 
 # Tested protocols [&uarr;](#table-of-contents)
 
@@ -208,10 +210,11 @@ PFSM: output is protocol finite state machine (describing semantic/sequential lo
 | ProPrint [[51]](#51) | 2017 |  |  |  |  |
 | ProHacker [[52]](#52) | 2017 |  |  |  |  |
 | Goo et al. [[53]](#53) | 2019 | HTTP | DNS |  |  |
-| Yang et al. [[54]](#54) | 2020 |  | IPv4, TCP |  |  |
-| Sun et al. [[55]](#55) | 2020 |  |  |  |  |
-| Shim et al. [[56]](#56) | 2020 | FTP | Modbus/TCP, Ethernet/IP |  |  |
-| IPART [[57]](#57) | 2020 |  | Modbus, IEC104, Ethernet/IP |  |  |
+| Universal Radio Hacker [[54]](#54) | 2019 |  |  |  |  |
+| Yang et al. [[55]](#55) | 2020 |  | IPv4, TCP |  |  |
+| Sun et al. [[56]](#56) | 2020 |  |  |  |  |
+| Shim et al. [[57]](#57) | 2020 | FTP | Modbus/TCP, Ethernet/IP |  |  |
+| IPART [[58]](#58) | 2020 |  | Modbus, IEC104, Ethernet/IP |  |  |
 
 # Source Code [&uarr;](#table-of-contents)
 
@@ -221,6 +224,7 @@ Most papers do not provide the code used in the research. For the following pape
 | ReverX [[25]](#25) | 2011 | https://github.com/jasantunes/reverx |
 | Netzob [[32]](#32) | 2012 | https://github.com/netzob/netzob |
 | PULSAR [[47]](#47) | 2015 | https://github.com/hgascon/pulsar |
+| Universal Radio Hacker [[54]](#54) | 2019 | https://github.com/jopohl/urh |
 
 # References [&uarr;](#table-of-contents)
 
@@ -239,7 +243,7 @@ Lim, J., Reps, T., Liblit, B.: Extracting output formats from executables. In: 1
 #### [7]
 Cui, W., Paxson, V., Weaver, N., Katz, R.H.: Protocol-independent adaptive replay of application dialog. In: Proceedings of the 13th Annual Network and Distributed System Security Symposium (NDSS). Internet Society, San Diego (2006). http://research.microsoft.com/apps/pubs/default.aspx?id=153197
 #### [8]
-W. Cui, J. Kannan, and H. J. Wang, “Discoverer: automatic protocol description generation from network traces,” in Proceedings of the USENIX Security Symposium, 2007. 
+W. Cui, J. Kannan, and H. J. Wang, “Discoverer: Automatic protocol reverse engineering from network traces.,” in USENIX security symposium, 2007, pp. 1–14.  [PDF](https://www.usenix.org/event/sec07/tech/full_papers/cui/cui.pdf)
 #### [9]
 J. Caballero, H. Yin, Z. Liang, and D. Song, “Polyglot: automatic extraction of protocol message format using dynamic binary analysis,” in Proceedings of the 14th ACM Conference on Computer and Communications Security (CCS ’07), pp. 317–329, ACM, November 2007.
 #### [10]
@@ -333,10 +337,13 @@ Y. Wang, X. Yun, Y. Zhang, L. Chen, and T. Zang, “Rethinking robust and accura
 #### [53]
 Y.-H. Goo, K.-S. Shim, M.-S. Lee, and M.-S. Kim, “Protocol Specification Extraction Based on Contiguous Sequential Pattern Algorithm,” IEEE Access, vol. 7, pp. 36057–36074, 2019, doi: 10.1109/ACCESS.2019.2905353.  [PDF](https://ieeexplore.ieee.org/iel7/6287639/6514899/08667834.pdf)
 #### [54]
-C. Yang, C. Fu, Y. Qian, Y. Hong, G. Feng, and L. Han, “Deep Learning-Based Reverse Method of Binary Protocol,” in Security and Privacy in Digital Economy, vol. 1268, S. Yu, P. Mueller, and J. Qian, Eds. Singapore: Springer Singapore, 2020, pp. 606–624. 
+J. Pohl and A. Noack, “Universal radio hacker: A suite for analyzing and attacking stateful wireless protocols,” Baltimore, MD, Aug. 2018, [Online]. Available: https://www.usenix.org/conference/woot18/presentation/pohl. 
+J. Pohl and A. Noack, “Automatic wireless protocol reverse engineering,” Santa Clara, CA, Aug. 2019, [Online]. Available: https://www.usenix.org/conference/woot19/presentation/pohl.  [PDF](https://www.usenix.org/system/files/conference/woot18/woot18-paper-pohl.pdf)
 #### [55]
-F. Sun, S. Wang, C. Zhang, and H. Zhang, “Clustering of unknown protocol messages based on format comparison,” Computer Networks, vol. 179, p. 107296, Oct. 2020, doi: 10.1016/j.comnet.2020.107296. 
+C. Yang, C. Fu, Y. Qian, Y. Hong, G. Feng, and L. Han, “Deep Learning-Based Reverse Method of Binary Protocol,” in Security and Privacy in Digital Economy, vol. 1268, S. Yu, P. Mueller, and J. Qian, Eds. Singapore: Springer Singapore, 2020, pp. 606–624. 
 #### [56]
-K. Shim, Y. Goo, M. Lee, and M. Kim, “Clustering method in protocol reverse engineering for industrial protocols,” International Journal of Network Management, Jun. 2020, doi: 10.1002/nem.2126.  [PDF](https://nmlab.korea.ac.kr/publication/published.papers/2020/2020.06_Clustering_method_for_ICS-APRE-IJNM.pdf)
+F. Sun, S. Wang, C. Zhang, and H. Zhang, “Clustering of unknown protocol messages based on format comparison,” Computer Networks, vol. 179, p. 107296, Oct. 2020, doi: 10.1016/j.comnet.2020.107296. 
 #### [57]
+K. Shim, Y. Goo, M. Lee, and M. Kim, “Clustering method in protocol reverse engineering for industrial protocols,” International Journal of Network Management, Jun. 2020, doi: 10.1002/nem.2126.  [PDF](https://nmlab.korea.ac.kr/publication/published.papers/2020/2020.06_Clustering_method_for_ICS-APRE-IJNM.pdf)
+#### [58]
 X. Wang, K. Lv, and B. Li, “IPART: an automatic protocol reverse engineering tool based on global voting expert for industrial protocols,” International Journal of Parallel, Emergent and Distributed Systems, vol. 35, no. 3, pp. 376–395, May 2020, doi: 10.1080/17445760.2019.1655740. 
