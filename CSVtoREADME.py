@@ -50,10 +50,11 @@ def main(delimiter):
                 "The papers are categorized into different groups so that it is more easy " + \
                 "to get an overview of existing solutions based on the problem you want to " + \
                 "tackle.<br/>\n\n" + \
-                "The collection was started with help of the following two surveys and got " + \
+                "The collection is based on the following three surveys and got " + \
                 "extended afterwards:\n\n" + \
-                "* J. Duchêne, C. Le Guernic, E. Alata, V. Nicomette, and M. Kaâniche, “State of the art of network protocol reverse engineering tools,” Journal of Computer Virology and Hacking Techniques, vol. 14, no. 1, pp. 53–68, Feb. 2018, doi: 10.1007/s11416-016-0289-8.\n" + \
-                "* B. D. Sija, Y.-H. Goo, K.-S. Shim, H. Hasanova, and M.-S. Kim, “A Survey of Automatic Protocol Reverse Engineering Approaches, Methods, and Tools on the Inputs and Outputs View,” Security and Communication Networks, vol. 2018, pp. 1–17, 2018, doi: 10.1155/2018/8370341.\n\n" + \
+                "* J. Narayan, S. K. Shukla, and T. C. Clancy, “A Survey of Automatic Protocol Reverse Engineering Tools,” ACM Computing Surveys, vol. 48, no. 3, pp. 1–26, Feb. 2016, doi: 10.1145/2840724. [PDF](https://www.researchgate.net/profile/Sandeep_Shukla6/publication/287106642_A_Survey_of_Automatic_Protocol_Reverse_Engineering_Tools/links/5773948208ae1b18a7ddff91/A-Survey-of-Automatic-Protocol-Reverse-Engineering-Tools.pdf)\n" + \
+                "* J. Duchêne, C. Le Guernic, E. Alata, V. Nicomette, and M. Kaâniche, “State of the art of network protocol reverse engineering tools,” Journal of Computer Virology and Hacking Techniques, vol. 14, no. 1, pp. 53–68, Feb. 2018, doi: 10.1007/s11416-016-0289-8. [PDF](https://hal.inria.fr/hal-01496958/document)\n" + \
+                "* B. D. Sija, Y.-H. Goo, K.-S. Shim, H. Hasanova, and M.-S. Kim, “A Survey of Automatic Protocol Reverse Engineering Approaches, Methods, and Tools on the Inputs and Outputs View,” Security and Communication Networks, vol. 2018, pp. 1–17, 2018, doi: 10.1155/2018/8370341. [PDF]https://www.hindawi.com/journals/scn/2018/8370341/abs/()\n\n" + \
                 "Please help extending this collection by adding papers to the `tools.ods`.\n\n")
 
         f.write("\n# Table of Contents\n\n")
