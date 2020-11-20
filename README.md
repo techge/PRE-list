@@ -80,7 +80,7 @@ Please help extending this collection by adding papers to the `tools.ods`.
 | ProPrint [[51]](#51) | 2017 |  |
 | ProHacker [[52]](#52) | 2017 |  |
 | Goo et al. [[53]](#53) | 2019 | Apriori based: Finding „frequent contiguous common subsequences“ via new Contiguous Sequential Pattern (CSP) algorithm which is based on Generalized Sequential Pattern (GSP) and other Apriori algorithms. CSP is used three times hierarchically to extract different information/fields based on previous results. |
-| Universal Radio Hacker [[54]](#54) | 2019 |  |
+| Universal Radio Hacker [[54]](#54) | 2019 | Physical layer based analysis of proprietary wireless protocols considering wireless specific properties like Received Signal Strength Indicator (RSSI) and using statistical methods |
 | Yang et al. [[55]](#55) | 2020 | Using deep-learning (LSTM-FCN) for reversing binary protocols |
 | Sun et al. [[56]](#56) | 2020 | "To measure format similarity of unknown protocol messages in a proper granularity, we propose relative measuremnets, Token Format Distance (TFD) and Message Format Distance (MFD), based on core rules of Augmented Backus-Naur Form (ABND)." for clustering process Silhouette Coefficient and Dunn Index are used. density based cluster algorithm DBSCAN is used for clustering of messages |
 | Shim et al. [[57]](#57) | 2020 | Follow up on Goo et al. 2019 |
@@ -148,7 +148,7 @@ PFSM: output is protocol finite state machine (describing semantic/sequential lo
 | ProPrint [[51]](#51) | 2017 | &#10004; |  |  |  | Fingerprints |
 | ProHacker [[52]](#52) | 2017 | &#10004; |  |  |  | Keywords |
 | Goo et al. [[53]](#53) | 2019 | &#10004; |  | &#10004; | &#10004; |  |
-| Universal Radio Hacker [[54]](#54) | 2019 | &#10004; |  |  |  |  |
+| Universal Radio Hacker [[54]](#54) | 2019 | &#10004; |  | &#10004; |  |  |
 | Yang et al. [[55]](#55) | 2020 | &#10004; |  | &#10004; |  |  |
 | Sun et al. [[56]](#56) | 2020 |  |  |  |  |  |
 | Shim et al. [[57]](#57) | 2020 | &#10004; |  | &#10004; |  |  |
@@ -211,7 +211,7 @@ PFSM: output is protocol finite state machine (describing semantic/sequential lo
 | ProPrint [[51]](#51) | 2017 |  |  |  |  |
 | ProHacker [[52]](#52) | 2017 |  |  |  |  |
 | Goo et al. [[53]](#53) | 2019 | HTTP | DNS |  |  |
-| Universal Radio Hacker [[54]](#54) | 2019 |  |  |  |  |
+| Universal Radio Hacker [[54]](#54) | 2019 |  |  |  | proprietary wireless protocols of IoT devices |
 | Yang et al. [[55]](#55) | 2020 |  | IPv4, TCP |  |  |
 | Sun et al. [[56]](#56) | 2020 |  |  |  |  |
 | Shim et al. [[57]](#57) | 2020 | FTP | Modbus/TCP, Ethernet/IP |  |  |
