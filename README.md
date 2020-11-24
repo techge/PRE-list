@@ -31,60 +31,60 @@ Please help extending this collection by adding papers to the `tools.ods`.
 | GAPA [[2]](#2) | 2005 | Protocol analyzer and open language that uses the protocol analyzer specification Spec → it is meant to be integrated in monitoring and analyzing tools |
 | ScriptGen [[3]](#3) | 2005 | Grouping and clustering messages, find edges from clusters to clusters for being able to replay messages once a similar message arrives |
 | RolePlayer [[4]](#4) | 2006 | Byte-wise sequence alignment (find variable fields in messages) and clustering with FSM simplification |
-| Ma et al. [[5]](#5) | 2006 |  |
-| FFE/x86 [[6]](#6) | 2006 |  |
-| Replayer [[7]](#7) | 2006 |  |
+| Ma et al. [[5]](#5) | 2006 | Please review |
+| FFE/x86 [[6]](#6) | 2006 | Please review |
+| Replayer [[7]](#7) | 2006 | Please review |
 | Discoverer [[8]](#8) | 2007 | Tokenization of messages, recursive clustering to find formats, merge similar formats |
 | Polyglot [[9]](#9) | 2007 | Dynamic taint-analysis |
 | PEXT [[10]](#10) | 2007 | Message clustering for creating FSM graph and simplify FSM graph |
-| Rosetta [[11]](#11) | 2007 |  |
+| Rosetta [[11]](#11) | 2007 | Please review |
 | AutoFormat [[12]](#12) | 2008 | Dynamic taint-analysis |
 | Tupni [[13]](#13) | 2008 | Dynamic taint-analysis; look for loops to identify boundaries within messages |
-| Boosting [[14]](#14) | 2008 |  |
-| ConfigRE [[15]](#15) | 2008 |  |
+| Boosting [[14]](#14) | 2008 | Please review |
+| ConfigRE [[15]](#15) | 2008 | Please review |
 | ReFormat [[16]](#16) | 2009 | Dynamic taint-analysis, especially targeting encrypted protocols by looking for bitwise and arithmetic operations |
-| Prospex [[17]](#17) | 2009 |  |
-| Xiao et al. [[18]](#18) | 2009 |  |
+| Prospex [[17]](#17) | 2009 | Please review |
+| Xiao et al. [[18]](#18) | 2009 | Please review |
 | Trifilo et al. [[19]](#19) | 2009 | Measure byte-wise variances in aligned messages |
-| Antunes and Neves [[20]](#20) | 2009 |  |
+| Antunes and Neves [[20]](#20) | 2009 | Please review |
 | Dispatcher [[21]](#21) | 2009 | Dynamic taint-analysis (successor of Polyglot using send instead of received messages) |
-| Fuzzgrind [[22]](#22) | 2009 |  |
-| REWARDS [[23]](#23) | 2010 |  |
-| MACE [[24]](#24) | 2010 |  |
+| Fuzzgrind [[22]](#22) | 2009 | Please review |
+| REWARDS [[23]](#23) | 2010 | Please review |
+| MACE [[24]](#24) | 2010 | Please review |
 | ReverX [[25]](#25) | 2011 | Speech recognition (thus only for text-based protocols) to find carriage returns and spaces, afterwards looking for frequencies of keywords; multiple partial FSMs are merged and simplified to get PFSM |
 | Veritas [[26]](#26) | 2011 | Identifiying keywords, clustering and transition probability → probabilistic protocol state machine |
 | Biprominer [[27]](#27) | 2011 | Statistical analysis including three phases, learning phase, labeling phase and transition probability model building phase. See [this figure](img/biprominer.png). |
-| ASAP [[28]](#28) | 2011 |  |
-| Howard [[29]](#29) | 2011 |  |
+| ASAP [[28]](#28) | 2011 | Please review |
+| Howard [[29]](#29) | 2011 | Please review |
 | ProDecoder [[30]](#30) | 2012 | Successor of Biprominer which also addresses text-based protocols; two-phases are used: first apply Biprominer, second use Needleman-Wunsch for alignment |
-| Zhang et al. [[31]](#31) | 2012 |  |
+| Zhang et al. [[31]](#31) | 2012 | Please review |
 | Netzob [[32]](#32) | 2012 | See [this figure](https://github.com/netzob/netzob/blob/4a72c0cbd6d1e7b997b2b8ad170b7a38e400dfca/netzob/doc/documentation/source/netzob_archi.png) |
-| PRISMA [[33]](#33) | 2012 |  |
-| ARTISTE [[34]](#34) | 2012 |  |
-| Wang et al. [[35]](#35) | 2013 |  |
-| Laroche et al. [[36]](#36) | 2013 |  |
+| PRISMA [[33]](#33) | 2012 | Please review |
+| ARTISTE [[34]](#34) | 2012 | Please review |
+| Wang et al. [[35]](#35) | 2013 | Please review |
+| Laroche et al. [[36]](#36) | 2013 | Please review |
 | AutoReEngine [[37]](#37) | 2013 | Apriori Algorithm (based on Agrawal/Srikant 1994). Identify fields and keywords by considering the amount of occurrences. Message formats are considered as series of keywords. State machines are derived from labeled messages or frequent subsequences. See [this figure](img/autoreengine.png) for clarification. |
-| Dispatcher2 [[38]](#38) | 2013 |  |
-| ProVeX [[39]](#39) | 2013 |  |
-| Meng et al. [[40]](#40) | 2014 |  |
-| AFL [[41]](#41) | 2014 |  |
-| ProGraph [[42]](#42) | 2015 |  |
-| FieldHunter [[43]](#43) | 2015 |  |
-| RS Cluster [[44]](#44) | 2015 |  |
-| UPCSS [[45]](#45) | 2015 |  |
-| ARGOS [[46]](#46) | 2015 |  |
+| Dispatcher2 [[38]](#38) | 2013 | Please review |
+| ProVeX [[39]](#39) | 2013 | Please review |
+| Meng et al. [[40]](#40) | 2014 | Please review |
+| AFL [[41]](#41) | 2014 | Please review |
+| ProGraph [[42]](#42) | 2015 | Please review |
+| FieldHunter [[43]](#43) | 2015 | Please review |
+| RS Cluster [[44]](#44) | 2015 | Please review |
+| UPCSS [[45]](#45) | 2015 | Please review |
+| ARGOS [[46]](#46) | 2015 | Please review |
 | PULSAR [[47]](#47) | 2015 | Reverse engineer network protocols with the aim to fuzz them with thus knowledge |
-| Cai et al. [[48]](#48) | 2016 |  |
-| WASp [[49]](#49) | 2016 |  |
-| PowerShell [[50]](#50) | 2017 |  |
-| ProPrint [[51]](#51) | 2017 |  |
-| ProHacker [[52]](#52) | 2017 |  |
+| Cai et al. [[48]](#48) | 2016 | Please review |
+| WASp [[49]](#49) | 2016 | Please review |
+| PowerShell [[50]](#50) | 2017 | Please review |
+| ProPrint [[51]](#51) | 2017 | Please review |
+| ProHacker [[52]](#52) | 2017 | Please review |
 | Goo et al. [[53]](#53) | 2019 | Apriori based: Finding „frequent contiguous common subsequences“ via new Contiguous Sequential Pattern (CSP) algorithm which is based on Generalized Sequential Pattern (GSP) and other Apriori algorithms. CSP is used three times hierarchically to extract different information/fields based on previous results. |
 | Universal Radio Hacker [[54]](#54) | 2019 | Physical layer based analysis of proprietary wireless protocols considering wireless specific properties like Received Signal Strength Indicator (RSSI) and using statistical methods |
 | Yang et al. [[55]](#55) | 2020 | Using deep-learning (LSTM-FCN) for reversing binary protocols |
 | Sun et al. [[56]](#56) | 2020 | "To measure format similarity of unknown protocol messages in a proper granularity, we propose relative measurements, Token Format Distance (TFD) and Message Format Distance (MFD), based on core rules of Augmented Backus-Naur Form (ABND)." for clustering process Silhouette Coefficient and Dunn Index are used. density based cluster algorithm DBSCAN is used for clustering of messages |
 | Shim et al. [[57]](#57) | 2020 | Follow up on Goo et al. 2019 |
-| IPART [[58]](#58) | 2020 |  |
+| IPART [[58]](#58) | 2020 | Please review |
 
 # Input and Output [&uarr;](#table-of-contents)
 

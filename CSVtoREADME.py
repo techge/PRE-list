@@ -55,16 +55,22 @@ def print_table(f, papers, columns, checkm=False):
     f.write("\n")
 
 # write table rows with content
-    for cite, paper in papers:
-        f.write("| " + paper['Name'] + " [[" + str(cite) + "]](#" + str(cite) + ") | " + \
-                paper['Year'] + " |")
+    if len(columns) > 1:
         # TODO do sorting
-        for item in columns:
+        for cite, paper in papers:
+            f.write("| " + paper['Name'] + " [[" + str(cite) + "]](#" + str(cite) + ") | " + \
+                    paper['Year'] + " |")
+            for item in columns:
                 if checkm:
                     f.write(" " + checkmark(paper[item]) + " |")
                 else:
                     f.write(" " + paper[item] + " |")
-        f.write("\n")
+            f.write("\n")
+    else:
+        for cite, paper in papers:
+            if paper[item]:
+                f.write("| " + paper['Name'] + " [[" + str(cite) + "]](#" + str(cite) + ") | " + \
+                        paper['Year'] + " | " + paper[item] + " |\n")
 
 
 def main(delimiter):
@@ -124,13 +130,7 @@ def main(delimiter):
         f.write("\n# Source Code [&uarr;](#table-of-contents)\n\n")
         f.write("Most papers do not provide the code used in the research. For the following " + \
                 "papers exists (example) code.<br/>\n")
-        f.write("| Name | Year | Source Code |\n")
-        f.write("|------|------|-------------|\n")
-        for cite, paper in papers:
-            if paper['Source Code']:
-                f.write("| " + paper['Name'] + " [[" + str(cite) + "]](#" + str(cite) + ") | " + \
-                        paper['Year'] + " | " + \
-                        paper['Source Code'] + " |\n")
+        print_table(f, papers, ['Source Code'])
 
 # References
         f.write("\n# References [&uarr;](#table-of-contents)\n\n")
