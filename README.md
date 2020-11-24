@@ -25,40 +25,40 @@ Please help extending this collection by adding papers to the `tools.ods`.
 
 # Overview [&uarr;](#table-of-contents)
 
-| Name | Year | Method/Approach used |
-|------|------|----------------------|
-| PIP [[1]](#1) | 2004 | Sequence alignment algorithm of Needleman and Wunsch 1970 and Smith and Waterma 1981 applied |
+| Name | Year | Approach used |
+|------|------|---------------|
+| PIP [[1]](#1) | 2004 | Keyword detection and Sequence alignment based on Needleman and Wunsch 1970 and Smith and Waterman 1981; this approach was applied and extended by many following papers |
 | GAPA [[2]](#2) | 2005 | Protocol analyzer and open language that uses the protocol analyzer specification Spec → it is meant to be integrated in monitoring and analyzing tools |
-| ScriptGen [[3]](#3) | 2005 | Byte-wise sequence alignment (find variable fields in messages) |
-| RolePlayer [[4]](#4) | 2006 | Byte-wise sequence alignment (find variable fields in messages) |
+| ScriptGen [[3]](#3) | 2005 | Grouping and clustering messages, find edges from clusters to clusters for being able to replay messages once a similar message arrives |
+| RolePlayer [[4]](#4) | 2006 | Byte-wise sequence alignment (find variable fields in messages) and clustering with FSM simplification |
 | Ma et al. [[5]](#5) | 2006 |  |
 | FFE/x86 [[6]](#6) | 2006 |  |
 | Replayer [[7]](#7) | 2006 |  |
-| Discoverer [[8]](#8) | 2007 | Recursive clustering and type-based sequence alignment |
-| Polyglot [[9]](#9) | 2007 | Dynamic analysis (execution trace and network trace) |
-| PEXT [[10]](#10) | 2007 |  |
+| Discoverer [[8]](#8) | 2007 | Tokenization of messages, recursive clustering to find formats, merge similar formats |
+| Polyglot [[9]](#9) | 2007 | Dynamic taint-analysis |
+| PEXT [[10]](#10) | 2007 | Message clustering for creating FSM graph and simplify FSM graph |
 | Rosetta [[11]](#11) | 2007 |  |
-| AutoFormat [[12]](#12) | 2008 | Dynamic analysis (execution trace and network trace) |
-| Tupni [[13]](#13) | 2008 | Dynamic analysis (execution trace and network trace) |
+| AutoFormat [[12]](#12) | 2008 | Dynamic taint-analysis |
+| Tupni [[13]](#13) | 2008 | Dynamic taint-analysis; look for loops to identify boundaries within messages |
 | Boosting [[14]](#14) | 2008 |  |
 | ConfigRE [[15]](#15) | 2008 |  |
-| ReFormat [[16]](#16) | 2009 |  |
+| ReFormat [[16]](#16) | 2009 | Dynamic taint-analysis, especially targeting encrypted protocols by looking for bitwise and arithmetic operations |
 | Prospex [[17]](#17) | 2009 |  |
 | Xiao et al. [[18]](#18) | 2009 |  |
-| Trifilo et al. [[19]](#19) | 2009 |  |
+| Trifilo et al. [[19]](#19) | 2009 | Measure byte-wise variances in aligned messages |
 | Antunes and Neves [[20]](#20) | 2009 |  |
-| Dispatcher [[21]](#21) | 2009 | Dynamic analysis |
+| Dispatcher [[21]](#21) | 2009 | Dynamic taint-analysis (successor of Polyglot using send instead of received messages) |
 | Fuzzgrind [[22]](#22) | 2009 |  |
 | REWARDS [[23]](#23) | 2010 |  |
 | MACE [[24]](#24) | 2010 |  |
-| ReverX [[25]](#25) | 2011 |  |
-| Veritas [[26]](#26) | 2011 |  |
+| ReverX [[25]](#25) | 2011 | Speech recognition (thus only for text-based protocols) to find carriage returns and spaces, afterwards looking for frequencies of keywords; multiple partial FSMs are merged and simplified to get PFSM |
+| Veritas [[26]](#26) | 2011 | Identifiying keywords, clustering and transition probability → probabilistic protocol state machine |
 | Biprominer [[27]](#27) | 2011 | Statistical analysis including three phases, learning phase, labeling phase and transition probability model building phase. See [this figure](img/biprominer.png). |
 | ASAP [[28]](#28) | 2011 |  |
 | Howard [[29]](#29) | 2011 |  |
-| ProDecoder [[30]](#30) | 2012 |  |
+| ProDecoder [[30]](#30) | 2012 | Successor of Biprominer which also addresses text-based protocols; two-phases are used: first apply Biprominer, second use Needleman-Wunsch for alignment |
 | Zhang et al. [[31]](#31) | 2012 |  |
-| Netzob [[32]](#32) | 2012 | Sie [this figure](https://github.com/netzob/netzob/blob/4a72c0cbd6d1e7b997b2b8ad170b7a38e400dfca/netzob/doc/documentation/source/netzob_archi.png) |
+| Netzob [[32]](#32) | 2012 | See [this figure](https://github.com/netzob/netzob/blob/4a72c0cbd6d1e7b997b2b8ad170b7a38e400dfca/netzob/doc/documentation/source/netzob_archi.png) |
 | PRISMA [[33]](#33) | 2012 |  |
 | ARTISTE [[34]](#34) | 2012 |  |
 | Wang et al. [[35]](#35) | 2013 |  |
@@ -82,7 +82,7 @@ Please help extending this collection by adding papers to the `tools.ods`.
 | Goo et al. [[53]](#53) | 2019 | Apriori based: Finding „frequent contiguous common subsequences“ via new Contiguous Sequential Pattern (CSP) algorithm which is based on Generalized Sequential Pattern (GSP) and other Apriori algorithms. CSP is used three times hierarchically to extract different information/fields based on previous results. |
 | Universal Radio Hacker [[54]](#54) | 2019 | Physical layer based analysis of proprietary wireless protocols considering wireless specific properties like Received Signal Strength Indicator (RSSI) and using statistical methods |
 | Yang et al. [[55]](#55) | 2020 | Using deep-learning (LSTM-FCN) for reversing binary protocols |
-| Sun et al. [[56]](#56) | 2020 | "To measure format similarity of unknown protocol messages in a proper granularity, we propose relative measuremnets, Token Format Distance (TFD) and Message Format Distance (MFD), based on core rules of Augmented Backus-Naur Form (ABND)." for clustering process Silhouette Coefficient and Dunn Index are used. density based cluster algorithm DBSCAN is used for clustering of messages |
+| Sun et al. [[56]](#56) | 2020 | "To measure format similarity of unknown protocol messages in a proper granularity, we propose relative measurements, Token Format Distance (TFD) and Message Format Distance (MFD), based on core rules of Augmented Backus-Naur Form (ABND)." for clustering process Silhouette Coefficient and Dunn Index are used. density based cluster algorithm DBSCAN is used for clustering of messages |
 | Shim et al. [[57]](#57) | 2020 | Follow up on Goo et al. 2019 |
 | IPART [[58]](#58) | 2020 |  |
 
@@ -97,7 +97,7 @@ PFSM: output is protocol finite state machine (describing semantic/sequential lo
 |------|------|------|------|----|------|--------------|
 | PIP [[1]](#1) | 2004 | &#10004; |  |  |  | Keywords/ fields |
 | GAPA [[2]](#2) | 2005 |  | &#10004; | &#10004; | &#10004; |  |
-| ScriptGen [[3]](#3) | 2005 | &#10004; |  |  |  | Dialogs/scripts |
+| ScriptGen [[3]](#3) | 2005 | &#10004; |  |  |  | Dialogs/scripts (for replaying) |
 | RolePlayer [[4]](#4) | 2006 | &#10004; |  |  |  | Dialogs/scripts |
 | Ma et al. [[5]](#5) | 2006 | &#10004; |  |  |  | App-identification |
 | FFE/x86 [[6]](#6) | 2006 |  | &#10004; |  |  |  |
@@ -119,7 +119,7 @@ PFSM: output is protocol finite state machine (describing semantic/sequential lo
 | Fuzzgrind [[22]](#22) | 2009 |  | &#10004; |  |  |  |
 | REWARDS [[23]](#23) | 2010 |  | &#10004; |  |  |  |
 | MACE [[24]](#24) | 2010 |  | &#10004; |  |  |  |
-| ReverX [[25]](#25) | 2011 | &#10004; |  |  | &#10004; |  |
+| ReverX [[25]](#25) | 2011 | &#10004; |  | &#10004; | &#10004; |  |
 | Veritas [[26]](#26) | 2011 | &#10004; |  |  | &#10004; |  |
 | Biprominer [[27]](#27) | 2011 | &#10004; |  | &#10004; | &#10004; |  |
 | ASAP [[28]](#28) | 2011 | &#10004; |  |  |  | Semantics |
@@ -246,7 +246,7 @@ Cui, W., Paxson, V., Weaver, N., Katz, R.H.: Protocol-independent adaptive repla
 #### [8]
 W. Cui, J. Kannan, and H. J. Wang, “Discoverer: Automatic protocol reverse engineering from network traces.,” in USENIX security symposium, 2007, pp. 1–14.  [PDF](https://www.usenix.org/event/sec07/tech/full_papers/cui/cui.pdf)
 #### [9]
-J. Caballero, H. Yin, Z. Liang, and D. Song, “Polyglot: automatic extraction of protocol message format using dynamic binary analysis,” in Proceedings of the 14th ACM Conference on Computer and Communications Security (CCS ’07), pp. 317–329, ACM, November 2007.
+J. Caballero, H. Yin, Z. Liang, and D. Song, “Polyglot: automatic extraction of protocol message format using dynamic binary analysis,” in Proceedings of the 14th ACM Conference on Computer and Communications Security (CCS ’07), pp. 317–329, ACM, November 2007. [PDF](https://people.eecs.berkeley.edu/~dawnsong/papers/2007%20p317-caballero.pdf)
 #### [10]
 M. Shevertalov and S. Mancoridis, “A reverse engineering tool for extracting protocols of networked applications,” in Proceedings of the 14th Working Conference on Reverse Engineering (WCRE ’07), pp. 229–238, October 2007.
 #### [11]
@@ -279,7 +279,7 @@ Lin, Z., Zhang, X., Xu, D.: Automatic reverse engineering of data structures fro
 Cho, C.Y., Babi D., Shin, E.C.R., Song, D.: Inference and analysis of formal models of botnet command and control protocols. In: Proceedings of the 17th ACM Conference on Computer and Communications Security, CCS ’10, pp. 426–439. ACM, New York, NY (2010). doi:10.1145/1866307.1866355
 Cho, C.Y., Babi, D., Poosankam, P., Chen, K.Z., Wu, E.X., Song, D.: MACE: model-inference-assisted concolic exploration for protocol and vulnerability discovery. In: Proceedings of the 20th USENIX Conference on Security, SEC’11, p. 19. USENIX Association, Berkeley, CA (2011)
 #### [25]
-J. Antunes, N. Neves, and P. Verissimo, “Reverse engineering of protocols from network traces,” in Proceedings of the 18th Working Conference on Reverse Engineering (WCRE ’11), pp. 169–178, October 2011.
+J. Antunes, N. Neves, and P. Verissimo, “Reverse engineering of protocols from network traces,” in Proceedings of the 18th Working Conference on Reverse Engineering (WCRE ’11), pp. 169–178, October 2011. [PDF](https://www.researchgate.net/profile/Joao_Antunes3/publication/221200255_Reverse_Engineering_of_Protocols_from_Network_Traces/links/0fcfd50c3eb9574ac4000000.pdf)
 #### [26]
 Y. Wang, Z. Zhang, D. D. Yao, B. Qu, and L. Guo, “Inferring protocol state machine from network traces: a probabilistic approach,” in Proceedings of the 9th Applied Cryptography and Network Security International Conference (ACNS ’11), pp. 1–18, 2011.
 #### [27]
@@ -289,7 +289,7 @@ T. Krueger, N. Krmer, and K. Rieck, “Asap: automatic semantics-aware analysis 
 #### [29]
 Slowinska, A., Stancescu, T., Bos, H.: Howard: a dynamic excavator for reverse engineering data structures. In: Proceedings of the 18th Annual Network and Distributed System Security Symposium (NDSS). Internet Society, San Diego (2011)
 #### [30]
-Y. Wang, X. Yun, M. Z. Shafiq et al., “A semantics aware approach to automated reverse engineering unknown protocols,” in Proceedings of the 20th IEEE International Conference on Network Protocols (ICNP ’12), pp. 1–10, IEEE, Austin, Tex, USA, November 2012.
+Y. Wang, X. Yun, M. Z. Shafiq et al., “A semantics aware approach to automated reverse engineering unknown protocols,” in Proceedings of the 20th IEEE International Conference on Network Protocols (ICNP ’12), pp. 1–10, IEEE, Austin, Tex, USA, November 2012. [PDF](https://yaogroup.cs.vt.edu/papers/ICNP-12.pdf)
 #### [31]
 Z. Zhang, Q.-Y. Wen, and W. Tang, “Mining protocol state machines by interactive grammar inference,” in Proceedings of the 2012 3rd International Conference on Digital Manufacturing and Automation (ICDMA ’12), pp. 524–527, August 2012.
 #### [32]
