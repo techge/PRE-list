@@ -23,10 +23,48 @@ import csv
 
 
 def checkmark(char):
-    if char:
+    if char == "x":
         return "&#10004;"
     else:
-        return ""
+        return char
+
+"""
+Input:
+    file handle
+    list of papers
+    a list of column header entries
+    use checkmark sign instead of content if checkm is true
+Output:
+    table based on column headers printed to file
+"""
+def print_table(f, papers, columns, checkm=False):
+
+# write table header
+    f.write("| Name | Year |")
+
+    for item in columns:
+        f.write(" " + item + " |")
+
+    f.write("\n")
+    f.write("|------|------|")
+
+    for item in columns:
+        # put in as many '-' as item is long + 2 for space on beginning and end
+        f.write((len(item) + 2) * "-" + "|")
+
+    f.write("\n")
+
+# write table rows with content
+    for cite, paper in papers:
+        f.write("| " + paper['Name'] + " [[" + str(cite) + "]](#" + str(cite) + ") | " + \
+                paper['Year'] + " |")
+        # TODO do sorting
+        for item in columns:
+                if checkm:
+                    f.write(" " + checkmark(paper[item]) + " |")
+                else:
+                    f.write(" " + paper[item] + " |")
+        f.write("\n")
 
 
 def main(delimiter):
@@ -65,42 +103,24 @@ def main(delimiter):
         f.write("* [Source code](#source-code-)\n")
         f.write("* [References](#references-)\n\n")
 
+# Overview
         f.write("\n# Overview [&uarr;](#table-of-contents)\n\n")
-        f.write("| Name | Year | Method/Approach used |\n")
-        f.write("|------|------|----------------------|\n")
-        for cite, paper in papers:
-            f.write("| " + paper['Name'] + " [[" + str(cite) + "]](#" + str(cite) + ") | " + \
-                    paper['Year'] + " | " + \
-                    paper['Approach used'] + " |\n")
+        print_table(f, papers, ['Approach used'])
 
+# Input and Output
         f.write("\n# Input and Output [&uarr;](#table-of-contents)\n\n")
         f.write("NetT: input is a network trace (e.g. pcap)<br />\n" + \
                 "ExeT: input is an execution trace (code/binary at hand)<br />\n" + \
                 "PF: output is protocol format (describing the syntax)<br />\n" + \
                 "PFSM: output is protocol finite state machine (describing semantic/sequential " + \
                 "logic)<br />\n\n")
-        f.write("| Name | Year | NetT | ExeT | PF | PFSM | Other Output |\n")
-        f.write("|------|------|------|------|----|------|--------------|\n")
-        for cite, paper in papers:
-            f.write("| " + paper['Name'] + " [[" + str(cite) + "]](#" + str(cite) + ") | " + \
-                    paper['Year'] + " | " + \
-                    checkmark(paper['NetT']) + " | " + \
-                    checkmark(paper['ExeT']) + " | " + \
-                    checkmark(paper['PF']) + " | " + \
-                    checkmark(paper['PFSM']) + " | " + \
-                    paper['Other Output'] + " |\n")
+        print_table(f, papers, ['NetT', 'ExeT', 'PF', 'PFSM', 'Other Output'], checkm=True)
 
+# Tested protocols
         f.write("\n# Tested protocols [&uarr;](#table-of-contents)\n\n")
-        f.write("| Name | Year | Text-based | Binary-based | Hybrid | Other Protocols |\n")
-        f.write("|------|------|------------|--------------|--------|-----------------|\n")
-        for cite, paper in papers:
-            f.write("| " + paper['Name'] + " [[" + str(cite) + "]](#" + str(cite) + ") | " + \
-                    paper['Year'] + " | " + \
-                    paper['Text-based'] + " | " + \
-                    paper['Binary-based'] + " | " + \
-                    paper['Hybrid'] + " | " + \
-                    paper['Other Protocols'] + " |\n")
+        print_table(f, papers, ['Text-based', 'Binary-based', 'Hybrid', 'Other Protocols'])
 
+# Source Code
         f.write("\n# Source Code [&uarr;](#table-of-contents)\n\n")
         f.write("Most papers do not provide the code used in the research. For the following " + \
                 "papers exists (example) code.<br/>\n")
@@ -112,6 +132,7 @@ def main(delimiter):
                         paper['Year'] + " | " + \
                         paper['Source Code'] + " |\n")
 
+# References
         f.write("\n# References [&uarr;](#table-of-contents)\n\n")
         for cite, paper in papers:
             f.write('#### [' + str(cite) + ']\n')
