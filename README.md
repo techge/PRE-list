@@ -79,10 +79,10 @@ Please help extending this collection by adding papers to the `tools.ods`.
 | PowerShell [[50]](#50) | 2017 | Please review |
 | ProPrint [[51]](#51) | 2017 | Please review |
 | ProHacker [[52]](#52) | 2017 | Please review |
-| Goo et al. [[53]](#53) | 2019 | Apriori based: Finding „frequent contiguous common subsequences“ via new Contiguous Sequential Pattern (CSP) algorithm which is based on Generalized Sequential Pattern (GSP) and other Apriori algorithms. CSP is used three times hierarchically to extract different information/fields based on previous results. |
+| Goo et al. [[53]](#53) | 2019 | Apriori based: Finding frequent contiguous common subsequences via novel Contiguous Sequential Pattern (CSP) algorithm which is based on Generalized Sequential Pattern (GSP) and other Apriori algorithms. CSP is used three times hierarchically to extract different information/fields based on previous results. |
 | Universal Radio Hacker [[54]](#54) | 2019 | Physical layer based analysis of proprietary wireless protocols considering wireless specific properties like Received Signal Strength Indicator (RSSI) and using statistical methods |
 | Yang et al. [[55]](#55) | 2020 | Using deep-learning (LSTM-FCN) for reversing binary protocols |
-| Sun et al. [[56]](#56) | 2020 | "To measure format similarity of unknown protocol messages in a proper granularity, we propose relative measurements, Token Format Distance (TFD) and Message Format Distance (MFD), based on core rules of Augmented Backus-Naur Form (ABND)." for clustering process Silhouette Coefficient and Dunn Index are used. density based cluster algorithm DBSCAN is used for clustering of messages |
+| Sun et al. [[56]](#56) | 2020 | Using Token Format Distance (TFD) and Message Format Distance (MFD), based on Augmented Backus-Naur Form (ABND).  For clustering process Silhouette Coefficient and Dunn Index are used. Density based cluster algorithm DBSCAN is used for clustering of messages |
 | Shim et al. [[57]](#57) | 2020 | Follow up on Goo et al. 2019 |
 | IPART [[58]](#58) | 2020 | Please review |
 
