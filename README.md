@@ -27,7 +27,7 @@ Please help extending this collection by adding papers to the `tools.ods`.
 
 | Name | Year | Approach used |
 |------|------|---------------|
-| PIP [[1]](#1) | 2004 | Keyword detection and Sequence alignment based on Needleman and Wunsch 1970 and Smith and Waterman 1981; this approach was applied and extended by many following papers |
+| PIP [[1]](#1) | 2004 | Keyword detection and Sequence alignment based on Needleman and Wunsch 1970 and Smith and Waterman 1981. This approach was applied and extended by many following papers |
 | GAPA [[2]](#2) | 2005 | Protocol analyzer and open language that uses the protocol analyzer specification Spec → it is meant to be integrated in monitoring and analyzing tools |
 | ScriptGen [[3]](#3) | 2005 | Grouping and clustering messages, find edges from clusters to clusters for being able to replay messages once a similar message arrives |
 | RolePlayer [[4]](#4) | 2006 | Byte-wise sequence alignment (find variable fields in messages) and clustering with FSM simplification |
@@ -39,7 +39,7 @@ Please help extending this collection by adding papers to the `tools.ods`.
 | PEXT [[10]](#10) | 2007 | Message clustering for creating FSM graph and simplify FSM graph |
 | Rosetta [[11]](#11) | 2007 | Please review |
 | AutoFormat [[12]](#12) | 2008 | Dynamic taint-analysis |
-| Tupni [[13]](#13) | 2008 | Dynamic taint-analysis; look for loops to identify boundaries within messages |
+| Tupni [[13]](#13) | 2008 | Dynamic taint-analysis. Look for loops to identify boundaries within messages |
 | Boosting [[14]](#14) | 2008 | Please review |
 | ConfigRE [[15]](#15) | 2008 | Please review |
 | ReFormat [[16]](#16) | 2009 | Dynamic taint-analysis, especially targeting encrypted protocols by looking for bitwise and arithmetic operations |
@@ -51,12 +51,12 @@ Please help extending this collection by adding papers to the `tools.ods`.
 | Fuzzgrind [[22]](#22) | 2009 | Please review |
 | REWARDS [[23]](#23) | 2010 | Please review |
 | MACE [[24]](#24) | 2010 | Please review |
-| ReverX [[25]](#25) | 2011 | Speech recognition (thus only for text-based protocols) to find carriage returns and spaces, afterwards looking for frequencies of keywords; multiple partial FSMs are merged and simplified to get PFSM |
+| ReverX [[25]](#25) | 2011 | Speech recognition (thus only for text-based protocols) to find carriage returns and spaces, afterwards looking for frequencies of keywords. Multiple partial FSMs are merged and simplified to get PFSM |
 | Veritas [[26]](#26) | 2011 | Identifiying keywords, clustering and transition probability → probabilistic protocol state machine |
 | Biprominer [[27]](#27) | 2011 | Statistical analysis including three phases, learning phase, labeling phase and transition probability model building phase. See [this figure](img/biprominer.png). |
 | ASAP [[28]](#28) | 2011 | Please review |
 | Howard [[29]](#29) | 2011 | Please review |
-| ProDecoder [[30]](#30) | 2012 | Successor of Biprominer which also addresses text-based protocols; two-phases are used: first apply Biprominer, second use Needleman-Wunsch for alignment |
+| ProDecoder [[30]](#30) | 2012 | Successor of Biprominer which also addresses text-based protocols. Two-phases are used: first apply Biprominer, second use Needleman-Wunsch for alignment |
 | Zhang et al. [[31]](#31) | 2012 | Please review |
 | Netzob [[32]](#32) | 2012 | See [this figure](https://github.com/netzob/netzob/blob/4a72c0cbd6d1e7b997b2b8ad170b7a38e400dfca/netzob/doc/documentation/source/netzob_archi.png) |
 | PRISMA [[33]](#33) | 2012 | Please review |
