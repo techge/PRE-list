@@ -336,7 +336,6 @@ Y. Wang, X. Yun, Y. Zhang, L. Chen, and T. Zang, “Rethinking robust and accura
 #### [53]
 Y.-H. Goo, K.-S. Shim, M.-S. Lee, and M.-S. Kim, “Protocol Specification Extraction Based on Contiguous Sequential Pattern Algorithm,” IEEE Access, vol. 7, pp. 36057–36074, 2019, doi: 10.1109/ACCESS.2019.2905353.  [PDF](https://ieeexplore.ieee.org/iel7/6287639/6514899/08667834.pdf)
 #### [54]
-J. Pohl and A. Noack, “Universal radio hacker: A suite for analyzing and attacking stateful wireless protocols,” Baltimore, MD, Aug. 2018, [Online]. Available: https://www.usenix.org/conference/woot18/presentation/pohl. 
 J. Pohl and A. Noack, “Automatic wireless protocol reverse engineering,” Santa Clara, CA, Aug. 2019, [Online]. Available: https://www.usenix.org/conference/woot19/presentation/pohl.  [PDF](https://www.usenix.org/system/files/conference/woot18/woot18-paper-pohl.pdf)
 #### [55]
 C. Yang, C. Fu, Y. Qian, Y. Hong, G. Feng, and L. Han, “Deep Learning-Based Reverse Method of Binary Protocol,” in Security and Privacy in Digital Economy, vol. 1268, S. Yu, P. Mueller, and J. Qian, Eds. Singapore: Springer Singapore, 2020, pp. 606–624. 
