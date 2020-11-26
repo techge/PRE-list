@@ -61,7 +61,7 @@ Please help extending this collection by adding papers to the `tools.ods`.
 | Netzob [[32]](#32) | 2012 | See [this figure](https://github.com/netzob/netzob/blob/4a72c0cbd6d1e7b997b2b8ad170b7a38e400dfca/netzob/doc/documentation/source/netzob_archi.png) |
 | PRISMA [[33]](#33) | 2012 | Please review |
 | ARTISTE [[34]](#34) | 2012 | Please review |
-| Wang et al. [[35]](#35) | 2013 | Please review |
+| Wang et al. [[35]](#35) | 2013 | Capturing of data, identifying frames and inferring the format by looking and frequency of frames and doing association analysis (using Apriori and FP-Growth). |
 | Laroche et al. [[36]](#36) | 2013 | Please review |
 | AutoReEngine [[37]](#37) | 2013 | Apriori Algorithm (based on Agrawal/Srikant 1994). Identify fields and keywords by considering the amount of occurrences. Message formats are considered as series of keywords. State machines are derived from labeled messages or frequent subsequences. See [this figure](img/autoreengine.png) for clarification. |
 | Dispatcher2 [[38]](#38) | 2013 | Please review |
