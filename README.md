@@ -75,7 +75,7 @@ Please help extending this collection by adding papers to the `tools.ods`.
 | ARGOS [[46]](#46) | 2015 | Please review |
 | PULSAR [[47]](#47) | 2015 | Reverse engineer network protocols with the aim to fuzz them with thus knowledge |
 | Cai et al. [[48]](#48) | 2016 | Please review |
-| WASp [[49]](#49) | 2016 | Please review |
+| WASp [[49]](#49) | 2016 | Pcap files are provided with context information (i.e. known MAC address), then grouping and analysing (looking for CRC, N-gram, Entropy, Features, Ranges), afterwards report creation based on scoring. |
 | PowerShell [[50]](#50) | 2017 | Please review |
 | ProPrint [[51]](#51) | 2017 | Please review |
 | ProHacker [[52]](#52) | 2017 | Please review |
@@ -143,7 +143,7 @@ PFSM: output is protocol finite state machine (describing semantic/sequential lo
 | ARGOS [[46]](#46) | 2015 |  | &#10004; |  |  |  |
 | PULSAR [[47]](#47) | 2015 |  |  |  |  |  |
 | Cai et al. [[48]](#48) | 2016 | &#10004; |  | &#10004; |  |  |
-| WASp [[49]](#49) | 2016 | &#10004; |  | &#10004; |  |  |
+| WASp [[49]](#49) | 2016 | &#10004; |  | &#10004; |  | scored analysis reports, spoofing candidates |
 | PowerShell [[50]](#50) | 2017 | &#10004; |  |  |  | Dialogs/scripts |
 | ProPrint [[51]](#51) | 2017 | &#10004; |  |  |  | Fingerprints |
 | ProHacker [[52]](#52) | 2017 | &#10004; |  |  |  | Keywords |
@@ -206,7 +206,7 @@ PFSM: output is protocol finite state machine (describing semantic/sequential lo
 | ARGOS [[46]](#46) | 2015 |  |  |  |  |
 | PULSAR [[47]](#47) | 2015 |  |  |  |  |
 | Cai et al. [[48]](#48) | 2016 | HTTP, SSDP | DNS, BitTorrent, QQ, NetBios |  |  |
-| WASp [[49]](#49) | 2016 |  |  |  | Smart plug & PSD systems |
+| WASp [[49]](#49) | 2016 |  |  |  | IEEE 802.15.4 proprietary protocols, Smart plug & PSD systems |
 | PowerShell [[50]](#50) | 2017 |  | ARP, OSPF, DHCP, STP |  | CDP/DTP/VTP, HSRP, LLDP, LLMNR, mDNS, NBNS, VRRP |
 | ProPrint [[51]](#51) | 2017 |  |  |  |  |
 | ProHacker [[52]](#52) | 2017 |  |  |  |  |
@@ -328,7 +328,7 @@ H. Gascon, C. Wressnegger, F. Yamaguchi, D. Arp, and K. Rieck, “Pulsar: Statef
 #### [48]
 J. Cai, J. Luo, and F. Lei, “Analyzing network protocols of application layer using hidden Semi-Markov model,” Mathematical Problems in Engineering, vol. 2016, Article ID 9161723, 14 pages, 2016.
 #### [49]
-K. Choi, Y. Son, J. Noh, H. Shin, J. Choi, and Y. Kim, “Dissecting customized protocols: automatic analysis for customized protocols based on IEEE 802.15.4,” in Proceedings of the 9th ACM Conference on Security and Privacy in Wireless and Mobile Networks, pp. 183–193, Darmstadt, Germany, July 2016.
+K. Choi, Y. Son, J. Noh, H. Shin, J. Choi, and Y. Kim, “Dissecting customized protocols: automatic analysis for customized protocols based on IEEE 802.15.4,” in Proceedings of the 9th ACM Conference on Security and Privacy in Wireless and Mobile Networks, pp. 183–193, Darmstadt, Germany, July 2016. [PDF](https://koasas.kaist.ac.kr/bitstream/10203/215875/1/choi_wisec2016.pdf)
 #### [50]
 D. R. Fletcher Jr., Identifying Vulnerable Network Protocols with PowerShell, SANS Institute Reading Room site, 2017.
 #### [51]
