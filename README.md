@@ -3,7 +3,7 @@ PRE-list
 
 List of (automatic) protocol reverse engineering tools/methods/approaches for network protocols<br/>
 
-This is a collection of 58 scientific papers about (automatic) protocol reverse engineering (PRE) methods and tools. The papers are categorized into different groups so that it is more easy to get an overview of existing solutions based on the problem you want to tackle.<br/>
+This is a collection of 59 scientific papers about (automatic) protocol reverse engineering (PRE) methods and tools. The papers are categorized into different groups so that it is more easy to get an overview of existing solutions based on the problem you want to tackle.<br/>
 
 The collection is based on the following three surveys and got extended afterwards:
 
@@ -43,7 +43,7 @@ Please help extending this collection by adding papers to the `tools.ods`.
 | Boosting [[14]](#14) | 2008 | Please review |
 | ConfigRE [[15]](#15) | 2008 | Please review |
 | ReFormat [[16]](#16) | 2009 | Dynamic taint-analysis, especially targeting encrypted protocols by looking for bitwise and arithmetic operations |
-| Prospex [[17]](#17) | 2009 | Please review |
+| Prospex [[17]](#17) | 2009 | Dynamic taint-analysis with following message clustering, optionally provides fuzzing candidates for Peach fuzzer |
 | Xiao et al. [[18]](#18) | 2009 | Please review |
 | Trifilo et al. [[19]](#19) | 2009 | Measure byte-wise variances in aligned messages |
 | Antunes and Neves [[20]](#20) | 2009 | Please review |
@@ -65,26 +65,27 @@ Please help extending this collection by adding papers to the `tools.ods`.
 | Laroche et al. [[36]](#36) | 2013 | Please review |
 | AutoReEngine [[37]](#37) | 2013 | Apriori Algorithm (based on Agrawal/Srikant 1994). Identify fields and keywords by considering the amount of occurrences. Message formats are considered as series of keywords. State machines are derived from labeled messages or frequent subsequences. See [this figure](img/autoreengine.png) for clarification. |
 | Dispatcher2 [[38]](#38) | 2013 | Please review |
-| ProVeX [[39]](#39) | 2013 | Please review |
+| ProVeX [[39]](#39) | 2013 | Identify Botnet traffic and try to infer the botnet type by using signatures |
 | Meng et al. [[40]](#40) | 2014 | Please review |
 | AFL [[41]](#41) | 2014 | Please review |
-| ProGraph [[42]](#42) | 2015 | Please review |
-| FieldHunter [[43]](#43) | 2015 | Please review |
-| RS Cluster [[44]](#44) | 2015 | Please review |
-| UPCSS [[45]](#45) | 2015 | Please review |
-| ARGOS [[46]](#46) | 2015 | Please review |
-| PULSAR [[47]](#47) | 2015 | Reverse engineer network protocols with the aim to fuzz them with thus knowledge |
-| Cai et al. [[48]](#48) | 2016 | Please review |
-| WASp [[49]](#49) | 2016 | Pcap files are provided with context information (i.e. known MAC address), then grouping and analysing (looking for CRC, N-gram, Entropy, Features, Ranges), afterwards report creation based on scoring. |
-| PowerShell [[50]](#50) | 2017 | Please review |
-| ProPrint [[51]](#51) | 2017 | Please review |
-| ProHacker [[52]](#52) | 2017 | Please review |
-| Goo et al. [[53]](#53) | 2019 | Apriori based: Finding „frequent contiguous common subsequences“ via new Contiguous Sequential Pattern (CSP) algorithm which is based on Generalized Sequential Pattern (GSP) and other Apriori algorithms. CSP is used three times hierarchically to extract different information/fields based on previous results. |
-| Universal Radio Hacker [[54]](#54) | 2019 | Physical layer based analysis of proprietary wireless protocols considering wireless specific properties like Received Signal Strength Indicator (RSSI) and using statistical methods |
-| Yang et al. [[55]](#55) | 2020 | Using deep-learning (LSTM-FCN) for reversing binary protocols |
-| Sun et al. [[56]](#56) | 2020 | "To measure format similarity of unknown protocol messages in a proper granularity, we propose relative measurements, Token Format Distance (TFD) and Message Format Distance (MFD), based on core rules of Augmented Backus-Naur Form (ABND)." for clustering process Silhouette Coefficient and Dunn Index are used. density based cluster algorithm DBSCAN is used for clustering of messages |
-| Shim et al. [[57]](#57) | 2020 | Follow up on Goo et al. 2019 |
-| IPART [[58]](#58) | 2020 | Please review |
+| Proword [[42]](#42) | 2014 | Please review |
+| ProGraph [[43]](#43) | 2015 | Please review |
+| FieldHunter [[44]](#44) | 2015 | Please review |
+| RS Cluster [[45]](#45) | 2015 | Please review |
+| UPCSS [[46]](#46) | 2015 | Please review |
+| ARGOS [[47]](#47) | 2015 | Please review |
+| PULSAR [[48]](#48) | 2015 | Reverse engineer network protocols with the aim to fuzz them with thus knowledge |
+| Cai et al. [[49]](#49) | 2016 | Please review |
+| WASp [[50]](#50) | 2016 | Pcap files are provided with context information (i.e. known MAC address), then grouping and analysing (looking for CRC, N-gram, Entropy, Features, Ranges), afterwards report creation based on scoring. |
+| PowerShell [[51]](#51) | 2017 | Please review |
+| ProPrint [[52]](#52) | 2017 | Please review |
+| ProHacker [[53]](#53) | 2017 | Please review |
+| Goo et al. [[54]](#54) | 2019 | Apriori based: Finding „frequent contiguous common subsequences“ via new Contiguous Sequential Pattern (CSP) algorithm which is based on Generalized Sequential Pattern (GSP) and other Apriori algorithms. CSP is used three times hierarchically to extract different information/fields based on previous results. |
+| Universal Radio Hacker [[55]](#55) | 2019 | Physical layer based analysis of proprietary wireless protocols considering wireless specific properties like Received Signal Strength Indicator (RSSI) and using statistical methods |
+| Yang et al. [[56]](#56) | 2020 | Using deep-learning (LSTM-FCN) for reversing binary protocols |
+| Sun et al. [[57]](#57) | 2020 | "To measure format similarity of unknown protocol messages in a proper granularity, we propose relative measurements, Token Format Distance (TFD) and Message Format Distance (MFD), based on core rules of Augmented Backus-Naur Form (ABND)." for clustering process Silhouette Coefficient and Dunn Index are used. density based cluster algorithm DBSCAN is used for clustering of messages |
+| Shim et al. [[58]](#58) | 2020 | Follow up on Goo et al. 2019 |
+| IPART [[59]](#59) | 2020 | Using extended voting expert algorithm to infer boundaries of fields, otherwise using three phase which are tokenizing, classifying and clustering. |
 
 # Input and Output [&uarr;](#table-of-contents)
 
@@ -111,7 +112,7 @@ PFSM: output is protocol finite state machine (describing semantic/sequential lo
 | Boosting [[14]](#14) | 2008 | &#10004; |  |  |  | Field(s) |
 | ConfigRE [[15]](#15) | 2008 |  | &#10004; |  |  |  |
 | ReFormat [[16]](#16) | 2009 |  | &#10004; | &#10004; |  |  |
-| Prospex [[17]](#17) | 2009 | &#10004; |  | &#10004; |  |  |
+| Prospex [[17]](#17) | 2009 | &#10004; | &#10004; | &#10004; | &#10004; |  |
 | Xiao et al. [[18]](#18) | 2009 |  | &#10004; |  | &#10004; |  |
 | Trifilo et al. [[19]](#19) | 2009 | &#10004; |  |  | &#10004; |  |
 | Antunes and Neves [[20]](#20) | 2009 | &#10004; |  |  | &#10004; |  |
@@ -136,23 +137,24 @@ PFSM: output is protocol finite state machine (describing semantic/sequential lo
 | ProVeX [[39]](#39) | 2013 | &#10004; |  |  |  | Signatures |
 | Meng et al. [[40]](#40) | 2014 | &#10004; |  |  | &#10004; |  |
 | AFL [[41]](#41) | 2014 |  | &#10004; |  |  |  |
-| ProGraph [[42]](#42) | 2015 | &#10004; |  | &#10004; |  |  |
-| FieldHunter [[43]](#43) | 2015 | &#10004; |  |  |  | Fields |
-| RS Cluster [[44]](#44) | 2015 | &#10004; |  |  |  | Grouped-messages |
-| UPCSS [[45]](#45) | 2015 | &#10004; |  |  |  | Proto-classification |
-| ARGOS [[46]](#46) | 2015 |  | &#10004; |  |  |  |
-| PULSAR [[47]](#47) | 2015 |  |  |  |  |  |
-| Cai et al. [[48]](#48) | 2016 | &#10004; |  | &#10004; |  |  |
-| WASp [[49]](#49) | 2016 | &#10004; |  | &#10004; |  | scored analysis reports, spoofing candidates |
-| PowerShell [[50]](#50) | 2017 | &#10004; |  |  |  | Dialogs/scripts |
-| ProPrint [[51]](#51) | 2017 | &#10004; |  |  |  | Fingerprints |
-| ProHacker [[52]](#52) | 2017 | &#10004; |  |  |  | Keywords |
-| Goo et al. [[53]](#53) | 2019 | &#10004; |  | &#10004; | &#10004; |  |
-| Universal Radio Hacker [[54]](#54) | 2019 | &#10004; |  | &#10004; |  |  |
-| Yang et al. [[55]](#55) | 2020 | &#10004; |  | &#10004; |  |  |
-| Sun et al. [[56]](#56) | 2020 |  |  |  |  |  |
-| Shim et al. [[57]](#57) | 2020 | &#10004; |  | &#10004; |  |  |
-| IPART [[58]](#58) | 2020 | &#10004; |  | &#10004; |  |  |
+| Proword [[42]](#42) | 2014 |  |  |  |  |  |
+| ProGraph [[43]](#43) | 2015 | &#10004; |  | &#10004; |  |  |
+| FieldHunter [[44]](#44) | 2015 | &#10004; |  |  |  | Fields |
+| RS Cluster [[45]](#45) | 2015 | &#10004; |  |  |  | Grouped-messages |
+| UPCSS [[46]](#46) | 2015 | &#10004; |  |  |  | Proto-classification |
+| ARGOS [[47]](#47) | 2015 |  | &#10004; |  |  |  |
+| PULSAR [[48]](#48) | 2015 |  |  |  |  |  |
+| Cai et al. [[49]](#49) | 2016 | &#10004; |  | &#10004; |  |  |
+| WASp [[50]](#50) | 2016 | &#10004; |  | &#10004; |  | scored analysis reports, spoofing candidates |
+| PowerShell [[51]](#51) | 2017 | &#10004; |  |  |  | Dialogs/scripts |
+| ProPrint [[52]](#52) | 2017 | &#10004; |  |  |  | Fingerprints |
+| ProHacker [[53]](#53) | 2017 | &#10004; |  |  |  | Keywords |
+| Goo et al. [[54]](#54) | 2019 | &#10004; |  | &#10004; | &#10004; |  |
+| Universal Radio Hacker [[55]](#55) | 2019 | &#10004; |  | &#10004; |  |  |
+| Yang et al. [[56]](#56) | 2020 | &#10004; |  | &#10004; |  |  |
+| Sun et al. [[57]](#57) | 2020 |  |  |  |  |  |
+| Shim et al. [[58]](#58) | 2020 | &#10004; |  | &#10004; |  |  |
+| IPART [[59]](#59) | 2020 | &#10004; |  | &#10004; |  |  |
 
 # Tested protocols [&uarr;](#table-of-contents)
 
@@ -199,33 +201,35 @@ PFSM: output is protocol finite state machine (describing semantic/sequential lo
 | ProVeX [[39]](#39) | 2013 | HTTP, SMTP, IMAP | DNS, VoIP, XMPP |  | Malware Family Protocols |
 | Meng et al. [[40]](#40) | 2014 |  | TCP, ARP |  |  |
 | AFL [[41]](#41) | 2014 |  |  |  |  |
-| ProGraph [[42]](#42) | 2015 | HTTP | DNS, BitTorrent, WeChat |  |  |
-| FieldHunter [[43]](#43) | 2015 | MSNP | DNS |  | SopCast, Ramnit |
-| RS Cluster [[44]](#44) | 2015 | FTP, SMTP, POP3, HTTPS | DNS, XunLei, BitTorrent, BitSpirit, QQ, eMule |  | MSSQL, Kugoo, PPTV |
-| UPCSS [[45]](#45) | 2015 | HTTP, FTP, SMTP, POP3, IMAP | DNS, SSL, SSH | SMB |  |
-| ARGOS [[46]](#46) | 2015 |  |  |  |  |
-| PULSAR [[47]](#47) | 2015 |  |  |  |  |
-| Cai et al. [[48]](#48) | 2016 | HTTP, SSDP | DNS, BitTorrent, QQ, NetBios |  |  |
-| WASp [[49]](#49) | 2016 |  |  |  | IEEE 802.15.4 proprietary protocols, Smart plug & PSD systems |
-| PowerShell [[50]](#50) | 2017 |  | ARP, OSPF, DHCP, STP |  | CDP/DTP/VTP, HSRP, LLDP, LLMNR, mDNS, NBNS, VRRP |
-| ProPrint [[51]](#51) | 2017 |  |  |  |  |
-| ProHacker [[52]](#52) | 2017 |  |  |  |  |
-| Goo et al. [[53]](#53) | 2019 | HTTP | DNS |  |  |
-| Universal Radio Hacker [[54]](#54) | 2019 |  |  |  | proprietary wireless protocols of IoT devices |
-| Yang et al. [[55]](#55) | 2020 |  | IPv4, TCP |  |  |
-| Sun et al. [[56]](#56) | 2020 |  |  |  |  |
-| Shim et al. [[57]](#57) | 2020 | FTP | Modbus/TCP, Ethernet/IP |  |  |
-| IPART [[58]](#58) | 2020 |  | Modbus, IEC104, Ethernet/IP |  |  |
+| Proword [[42]](#42) | 2014 |  |  |  |  |
+| ProGraph [[43]](#43) | 2015 | HTTP | DNS, BitTorrent, WeChat |  |  |
+| FieldHunter [[44]](#44) | 2015 | MSNP | DNS |  | SopCast, Ramnit |
+| RS Cluster [[45]](#45) | 2015 | FTP, SMTP, POP3, HTTPS | DNS, XunLei, BitTorrent, BitSpirit, QQ, eMule |  | MSSQL, Kugoo, PPTV |
+| UPCSS [[46]](#46) | 2015 | HTTP, FTP, SMTP, POP3, IMAP | DNS, SSL, SSH | SMB |  |
+| ARGOS [[47]](#47) | 2015 |  |  |  |  |
+| PULSAR [[48]](#48) | 2015 |  |  |  |  |
+| Cai et al. [[49]](#49) | 2016 | HTTP, SSDP | DNS, BitTorrent, QQ, NetBios |  |  |
+| WASp [[50]](#50) | 2016 |  |  |  | IEEE 802.15.4 proprietary protocols, Smart plug & PSD systems |
+| PowerShell [[51]](#51) | 2017 |  | ARP, OSPF, DHCP, STP |  | CDP/DTP/VTP, HSRP, LLDP, LLMNR, mDNS, NBNS, VRRP |
+| ProPrint [[52]](#52) | 2017 |  |  |  |  |
+| ProHacker [[53]](#53) | 2017 |  |  |  |  |
+| Goo et al. [[54]](#54) | 2019 | HTTP | DNS |  |  |
+| Universal Radio Hacker [[55]](#55) | 2019 |  |  |  | proprietary wireless protocols of IoT devices |
+| Yang et al. [[56]](#56) | 2020 |  | IPv4, TCP |  |  |
+| Sun et al. [[57]](#57) | 2020 |  |  |  |  |
+| Shim et al. [[58]](#58) | 2020 | FTP | Modbus/TCP, Ethernet/IP |  |  |
+| IPART [[59]](#59) | 2020 |  | Modbus, IEC104, Ethernet/IP |  |  |
 
 # Source Code [&uarr;](#table-of-contents)
 
 Most papers do not provide the code used in the research. For the following papers exists (example) code.<br/>
 | Name | Year | Source Code |
 |------|------|-------------|
+| PIP [[1]](#1) | 2004 | https://web.archive.org/web/20090416234849/http://4tphi.net/~awalters/PI/PI.html |
 | ReverX [[25]](#25) | 2011 | https://github.com/jasantunes/reverx |
 | Netzob [[32]](#32) | 2012 | https://github.com/netzob/netzob |
-| PULSAR [[47]](#47) | 2015 | https://github.com/hgascon/pulsar |
-| Universal Radio Hacker [[54]](#54) | 2019 | https://github.com/jopohl/urh |
+| PULSAR [[48]](#48) | 2015 | https://github.com/hgascon/pulsar |
+| Universal Radio Hacker [[55]](#55) | 2019 | https://github.com/jopohl/urh |
 
 # References [&uarr;](#table-of-contents)
 
@@ -254,7 +258,7 @@ Caballero, J., Song, D.: Rosetta: Extracting Protocol Semantics Using Binary Ana
 #### [12]
 Z. Lin, X. Jiang, D. Xu, and X. Zhang, “Automatic protocol format reverse engineering through context-aware monitored execution,” in Proceedings of the 15th Symposium on Network and  Distributed System Security (NDSS ’08), February 2008.
 #### [13]
-W. Cui, M. Peinado, K. Chen, H. J. Wang, and L. Irun-Briz, “Tupni: automatic reverse engineering of input formats,” in Proceedings of the 15th ACM Conference on Computer and Communications Security (CCS ’08), pp. 391–402, ACM, Alexandria, Va, USA, October 2008.
+W. Cui, M. Peinado, K. Chen, H. J. Wang, and L. Irun-Briz, “Tupni: automatic reverse engineering of input formats,” in Proceedings of the 15th ACM Conference on Computer and Communications Security (CCS ’08), pp. 391–402, ACM, Alexandria, Va, USA, October 2008. [PDF](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/tupni-ccs08.pdf)
 #### [14]
 K. Gopalratnam, S. Basu, J. Dunagan, and H. J. Wang, “Automatically extracting fields from unknown network protocols,” in Proceedings of the 15th Symposium on Network and Distributed System Security (NDSS ’08), 2008. [PDF](http://www.nicemice.net/helen/papers/sysml-Gopalratnam.pdf)
 #### [15]
@@ -262,7 +266,7 @@ Wang, R., Wang, X., Zhang, K., Li, Z.: Towards automatic reverse engineering of 
 #### [16]
 Z. Wang, X. Jiang, W. Cui, X. Wang, and M. Grace, “ReFormat: automatic reverse engineering of encrypted messages,” in Computer Security—ESORICS 2009. ESORICS 2009, M. Backes and P. Ning, Eds., vol. 5789 of Lecture Notes in Computer Science, pp. 200–215, Springer, Berlin, Germany, 2009.
 #### [17]
-P. M. Comparetti, G. Wondracek, C. Kruegel, and E. Kirda, “Prospex: protocol specification extraction,” in Proceedings of the 30th IEEE Symposium on Security and Privacy, pp. 110–125, Berkeley, Calif, USA, May 2009.
+P. M. Comparetti, G. Wondracek, C. Kruegel, and E. Kirda, “Prospex: protocol specification extraction,” in Proceedings of the 30th IEEE Symposium on Security and Privacy, pp. 110–125, Berkeley, Calif, USA, May 2009. [PDF](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.720.3272&rep=rep1&type=pdf)
 #### [18]
 M.-M. Xiao, S.-Z. Yu, and Y. Wang, “Automatic network protocol automaton extraction,” in Proceedings of the 3rd International Conference on Network and System Security (NSS ’09), pp. 336–343, October 2009.
 #### [19]
@@ -314,37 +318,39 @@ F. Meng, Y. Liu, C. Zhang, T. Li, and Y. Yue, “Inferring protocol state machin
 #### [41]
 Zalewski, M.: American Fuzzy Loop. http://lcamtuf.coredump.cx/afl/technical_details.txt
 #### [42]
-Q. Huang, P. P. C. Lee, and Z. Zhang, “Exploiting intrapacket dependency for fine-grained protocol format inference,” in Proceedings of the 14th IFIP Networking Conference (NETWORKING ’15), Toulouse, France, May 2015.
+Z. Zhang, Z. Zhang, P. P. C. Lee, Y. Liu, and G. Xie, “ProWord: An unsupervised approach to protocol feature word extraction,” in IEEE INFOCOM 2014 - IEEE Conference on Computer Communications, Toronto, ON, Canada, Apr. 2014, pp. 1393–1401, doi: 10.1109/INFOCOM.2014.6848073.  [PDF](http://adslab.cse.cuhk.edu.hk/pubs/infocom14proword.pdf)
 #### [43]
-I. Bermudez, A. Tongaonkar, M. Iliofotou, M. Mellia, and M. M. Munafo, “Automatic protocol field inference for deeper protocol understanding,” in Proceedings of the 14th IFIP Networking Conference (Networking ’15), pp. 1–9, May 2015. [PDF](http://dl.ifip.org/db/conf/networking/networking2015/1570062733.pdf)
+Q. Huang, P. P. C. Lee, and Z. Zhang, “Exploiting intrapacket dependency for fine-grained protocol format inference,” in Proceedings of the 14th IFIP Networking Conference (NETWORKING ’15), Toulouse, France, May 2015.
 #### [44]
-J.-Z. Luo, S.-Z. Yu, and J. Cai, “Capturing uncertainty information and categorical characteristics for network payload grouping in protocol reverse engineering,” Mathematical Problems in Engineering, vol. 2015, Article ID 962974, 9 pages, 2015.
+I. Bermudez, A. Tongaonkar, M. Iliofotou, M. Mellia, and M. M. Munafo, “Automatic protocol field inference for deeper protocol understanding,” in Proceedings of the 14th IFIP Networking Conference (Networking ’15), pp. 1–9, May 2015. [PDF](http://dl.ifip.org/db/conf/networking/networking2015/1570062733.pdf)
 #### [45]
-R. Lin, O. Li, Q. Li, and Y. Liu, “Unknown network protocol classification method based on semi supervised learning,” in Proceedings of the IEEE International Conference on Computer and Communications (ICCC ’15), pp. 300–308, Chengdu, China, October 2015.
+J.-Z. Luo, S.-Z. Yu, and J. Cai, “Capturing uncertainty information and categorical characteristics for network payload grouping in protocol reverse engineering,” Mathematical Problems in Engineering, vol. 2015, Article ID 962974, 9 pages, 2015.
 #### [46]
-Zeng, J., Lin, Z.: Towards automatic inference of kernel object semantics from binary code. In: 18th International Symposium, RAID 2015, vol. 9404, pp. 538–561. Springer, Kyoto (2015). doi:10.1007/978-3-319-26362-5
+R. Lin, O. Li, Q. Li, and Y. Liu, “Unknown network protocol classification method based on semi supervised learning,” in Proceedings of the IEEE International Conference on Computer and Communications (ICCC ’15), pp. 300–308, Chengdu, China, October 2015.
 #### [47]
-H. Gascon, C. Wressnegger, F. Yamaguchi, D. Arp, and K. Rieck, “Pulsar: Stateful Black-Box Fuzzing of Proprietary Network Protocols,” in Security and Privacy in Communication Networks, vol. 164, B. Thuraisingham, X. Wang, and V. Yegneswaran, Eds. Cham: Springer International Publishing, 2015, pp. 330–347.  [PDF](http://user.cs.uni-goettingen.de/~krieck/docs/2015-securecomm.pdf)
+Zeng, J., Lin, Z.: Towards automatic inference of kernel object semantics from binary code. In: 18th International Symposium, RAID 2015, vol. 9404, pp. 538–561. Springer, Kyoto (2015). doi:10.1007/978-3-319-26362-5
 #### [48]
-J. Cai, J. Luo, and F. Lei, “Analyzing network protocols of application layer using hidden Semi-Markov model,” Mathematical Problems in Engineering, vol. 2016, Article ID 9161723, 14 pages, 2016.
+H. Gascon, C. Wressnegger, F. Yamaguchi, D. Arp, and K. Rieck, “Pulsar: Stateful Black-Box Fuzzing of Proprietary Network Protocols,” in Security and Privacy in Communication Networks, vol. 164, B. Thuraisingham, X. Wang, and V. Yegneswaran, Eds. Cham: Springer International Publishing, 2015, pp. 330–347.  [PDF](http://user.cs.uni-goettingen.de/~krieck/docs/2015-securecomm.pdf)
 #### [49]
-K. Choi, Y. Son, J. Noh, H. Shin, J. Choi, and Y. Kim, “Dissecting customized protocols: automatic analysis for customized protocols based on IEEE 802.15.4,” in Proceedings of the 9th ACM Conference on Security and Privacy in Wireless and Mobile Networks, pp. 183–193, Darmstadt, Germany, July 2016. [PDF](https://koasas.kaist.ac.kr/bitstream/10203/215875/1/choi_wisec2016.pdf)
+J. Cai, J. Luo, and F. Lei, “Analyzing network protocols of application layer using hidden Semi-Markov model,” Mathematical Problems in Engineering, vol. 2016, Article ID 9161723, 14 pages, 2016.
 #### [50]
-D. R. Fletcher Jr., Identifying Vulnerable Network Protocols with PowerShell, SANS Institute Reading Room site, 2017.
+K. Choi, Y. Son, J. Noh, H. Shin, J. Choi, and Y. Kim, “Dissecting customized protocols: automatic analysis for customized protocols based on IEEE 802.15.4,” in Proceedings of the 9th ACM Conference on Security and Privacy in Wireless and Mobile Networks, pp. 183–193, Darmstadt, Germany, July 2016. [PDF](https://koasas.kaist.ac.kr/bitstream/10203/215875/1/choi_wisec2016.pdf)
 #### [51]
-Y. Wang, X. Yun, Y. Zhang, L. Chen, and G. Wu, “A nonparametric approach to the automated protocol fingerprint inference,” Journal of Network and Computer Applications, vol. 99, pp. 1–9, 2017.
+D. R. Fletcher Jr., Identifying Vulnerable Network Protocols with PowerShell, SANS Institute Reading Room site, 2017.
 #### [52]
-Y. Wang, X. Yun, Y. Zhang, L. Chen, and T. Zang, “Rethinking robust and accurate application protocol identification,” Computer Networks, vol. 129, pp. 64–78, 2017.
+Y. Wang, X. Yun, Y. Zhang, L. Chen, and G. Wu, “A nonparametric approach to the automated protocol fingerprint inference,” Journal of Network and Computer Applications, vol. 99, pp. 1–9, 2017.
 #### [53]
-Y.-H. Goo, K.-S. Shim, M.-S. Lee, and M.-S. Kim, “Protocol Specification Extraction Based on Contiguous Sequential Pattern Algorithm,” IEEE Access, vol. 7, pp. 36057–36074, 2019, doi: 10.1109/ACCESS.2019.2905353.  [PDF](https://ieeexplore.ieee.org/iel7/6287639/6514899/08667834.pdf)
+Y. Wang, X. Yun, Y. Zhang, L. Chen, and T. Zang, “Rethinking robust and accurate application protocol identification,” Computer Networks, vol. 129, pp. 64–78, 2017.
 #### [54]
+Y.-H. Goo, K.-S. Shim, M.-S. Lee, and M.-S. Kim, “Protocol Specification Extraction Based on Contiguous Sequential Pattern Algorithm,” IEEE Access, vol. 7, pp. 36057–36074, 2019, doi: 10.1109/ACCESS.2019.2905353.  [PDF](https://ieeexplore.ieee.org/iel7/6287639/6514899/08667834.pdf)
+#### [55]
 J. Pohl and A. Noack, “Universal radio hacker: A suite for analyzing and attacking stateful wireless protocols,” Baltimore, MD, Aug. 2018, [Online]. Available: https://www.usenix.org/conference/woot18/presentation/pohl. 
 J. Pohl and A. Noack, “Automatic wireless protocol reverse engineering,” Santa Clara, CA, Aug. 2019, [Online]. Available: https://www.usenix.org/conference/woot19/presentation/pohl.  [PDF](https://www.usenix.org/system/files/conference/woot18/woot18-paper-pohl.pdf)
-#### [55]
-C. Yang, C. Fu, Y. Qian, Y. Hong, G. Feng, and L. Han, “Deep Learning-Based Reverse Method of Binary Protocol,” in Security and Privacy in Digital Economy, vol. 1268, S. Yu, P. Mueller, and J. Qian, Eds. Singapore: Springer Singapore, 2020, pp. 606–624. 
 #### [56]
-F. Sun, S. Wang, C. Zhang, and H. Zhang, “Clustering of unknown protocol messages based on format comparison,” Computer Networks, vol. 179, p. 107296, Oct. 2020, doi: 10.1016/j.comnet.2020.107296. 
+C. Yang, C. Fu, Y. Qian, Y. Hong, G. Feng, and L. Han, “Deep Learning-Based Reverse Method of Binary Protocol,” in Security and Privacy in Digital Economy, vol. 1268, S. Yu, P. Mueller, and J. Qian, Eds. Singapore: Springer Singapore, 2020, pp. 606–624. 
 #### [57]
-K. Shim, Y. Goo, M. Lee, and M. Kim, “Clustering method in protocol reverse engineering for industrial protocols,” International Journal of Network Management, Jun. 2020, doi: 10.1002/nem.2126.  [PDF](https://nmlab.korea.ac.kr/publication/published.papers/2020/2020.06_Clustering_method_for_ICS-APRE-IJNM.pdf)
+F. Sun, S. Wang, C. Zhang, and H. Zhang, “Clustering of unknown protocol messages based on format comparison,” Computer Networks, vol. 179, p. 107296, Oct. 2020, doi: 10.1016/j.comnet.2020.107296. 
 #### [58]
+K. Shim, Y. Goo, M. Lee, and M. Kim, “Clustering method in protocol reverse engineering for industrial protocols,” International Journal of Network Management, Jun. 2020, doi: 10.1002/nem.2126.  [PDF](https://nmlab.korea.ac.kr/publication/published.papers/2020/2020.06_Clustering_method_for_ICS-APRE-IJNM.pdf)
+#### [59]
 X. Wang, K. Lv, and B. Li, “IPART: an automatic protocol reverse engineering tool based on global voting expert for industrial protocols,” International Journal of Parallel, Emergent and Distributed Systems, vol. 35, no. 3, pp. 376–395, May 2020, doi: 10.1080/17445760.2019.1655740. 
