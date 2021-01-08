@@ -3,7 +3,7 @@ PRE-list
 
 List of (automatic) protocol reverse engineering tools/methods/approaches for network protocols<br/>
 
-This is a collection of 59 scientific papers about (automatic) protocol reverse engineering (PRE) methods and tools. The papers are categorized into different groups so that it is more easy to get an overview of existing solutions based on the problem you want to tackle.<br/>
+This is a collection of 60 scientific papers about (automatic) protocol reverse engineering (PRE) methods and tools. The papers are categorized into different groups so that it is more easy to get an overview of existing solutions based on the problem you want to tackle.<br/>
 
 The collection is based on the following three surveys and got extended afterwards:
 
@@ -59,7 +59,7 @@ Please help extending this collection by adding papers to the `tools.ods`.
 | ProDecoder [[30]](#30) | 2012 | Successor of Biprominer which also addresses text-based protocols; two-phases are used: first apply Biprominer, second use Needleman-Wunsch for alignment |
 | Zhang et al. [[31]](#31) | 2012 | Please review |
 | Netzob [[32]](#32) | 2012 | See [this figure](https://github.com/netzob/netzob/blob/4a72c0cbd6d1e7b997b2b8ad170b7a38e400dfca/netzob/doc/documentation/source/netzob_archi.png) |
-| PRISMA [[33]](#33) | 2012 | Please review |
+| PRISMA [[33]](#33) | 2012 | Please review, follow-up paper/project to ASAP |
 | ARTISTE [[34]](#34) | 2012 | Please review |
 | Wang et al. [[35]](#35) | 2013 | Capturing of data, identifying frames and inferring the format by looking and frequency of frames and doing association analysis (using Apriori and FP-Growth). |
 | Laroche et al. [[36]](#36) | 2013 | Please review |
@@ -82,10 +82,11 @@ Please help extending this collection by adding papers to the `tools.ods`.
 | ProHacker [[53]](#53) | 2017 | Please review |
 | Goo et al. [[54]](#54) | 2019 | Apriori based: Finding „frequent contiguous common subsequences“ via new Contiguous Sequential Pattern (CSP) algorithm which is based on Generalized Sequential Pattern (GSP) and other Apriori algorithms. CSP is used three times hierarchically to extract different information/fields based on previous results. |
 | Universal Radio Hacker [[55]](#55) | 2019 | Physical layer based analysis of proprietary wireless protocols considering wireless specific properties like Received Signal Strength Indicator (RSSI) and using statistical methods |
-| Yang et al. [[56]](#56) | 2020 | Using deep-learning (LSTM-FCN) for reversing binary protocols |
-| Sun et al. [[57]](#57) | 2020 | "To measure format similarity of unknown protocol messages in a proper granularity, we propose relative measurements, Token Format Distance (TFD) and Message Format Distance (MFD), based on core rules of Augmented Backus-Naur Form (ABND)." for clustering process Silhouette Coefficient and Dunn Index are used. density based cluster algorithm DBSCAN is used for clustering of messages |
-| Shim et al. [[58]](#58) | 2020 | Follow up on Goo et al. 2019 |
-| IPART [[59]](#59) | 2020 | Using extended voting expert algorithm to infer boundaries of fields, otherwise using three phase which are tokenizing, classifying and clustering. |
+| Luo et al. [[56]](#56) | 2019 | From abstract: “[…] this study proposes a type-aware approach to message clustering guided by type information. The approach regards a message as a combination of n-grams, and it employs the Latent Dirichlet Allocation (LDA) model to characterize messages with types and n-grams via inferring the type distribution of each message.” |
+| Yang et al. [[57]](#57) | 2020 | Using deep-learning (LSTM-FCN) for reversing binary protocols |
+| Sun et al. [[58]](#58) | 2020 | "To measure format similarity of unknown protocol messages in a proper granularity, we propose relative measurements, Token Format Distance (TFD) and Message Format Distance (MFD), based on core rules of Augmented Backus-Naur Form (ABND)." for clustering process Silhouette Coefficient and Dunn Index are used. density based cluster algorithm DBSCAN is used for clustering of messages |
+| Shim et al. [[59]](#59) | 2020 | Follow up on Goo et al. 2019 |
+| IPART [[60]](#60) | 2020 | Using extended voting expert algorithm to infer boundaries of fields, otherwise using three phase which are tokenizing, classifying and clustering. |
 
 # Input and Output [&uarr;](#table-of-contents)
 
@@ -151,10 +152,11 @@ PFSM: output is protocol finite state machine (describing semantic/sequential lo
 | ProHacker [[53]](#53) | 2017 | &#10004; |  |  |  | Keywords |
 | Goo et al. [[54]](#54) | 2019 | &#10004; |  | &#10004; | &#10004; |  |
 | Universal Radio Hacker [[55]](#55) | 2019 | &#10004; |  | &#10004; |  |  |
-| Yang et al. [[56]](#56) | 2020 | &#10004; |  | &#10004; |  |  |
-| Sun et al. [[57]](#57) | 2020 |  |  |  |  |  |
-| Shim et al. [[58]](#58) | 2020 | &#10004; |  | &#10004; |  |  |
-| IPART [[59]](#59) | 2020 | &#10004; |  | &#10004; |  |  |
+| Luo et al. [[56]](#56) | 2019 |  |  |  |  |  |
+| Yang et al. [[57]](#57) | 2020 | &#10004; |  | &#10004; |  |  |
+| Sun et al. [[58]](#58) | 2020 |  |  |  |  |  |
+| Shim et al. [[59]](#59) | 2020 | &#10004; |  | &#10004; |  |  |
+| IPART [[60]](#60) | 2020 | &#10004; |  | &#10004; |  |  |
 
 # Tested protocols [&uarr;](#table-of-contents)
 
@@ -215,10 +217,11 @@ PFSM: output is protocol finite state machine (describing semantic/sequential lo
 | ProHacker [[53]](#53) | 2017 |  |  |  |  |
 | Goo et al. [[54]](#54) | 2019 | HTTP | DNS |  |  |
 | Universal Radio Hacker [[55]](#55) | 2019 |  |  |  | proprietary wireless protocols of IoT devices |
-| Yang et al. [[56]](#56) | 2020 |  | IPv4, TCP |  |  |
-| Sun et al. [[57]](#57) | 2020 |  |  |  |  |
-| Shim et al. [[58]](#58) | 2020 | FTP | Modbus/TCP, Ethernet/IP |  |  |
-| IPART [[59]](#59) | 2020 |  | Modbus, IEC104, Ethernet/IP |  |  |
+| Luo et al. [[56]](#56) | 2019 |  |  |  |  |
+| Yang et al. [[57]](#57) | 2020 |  | IPv4, TCP |  |  |
+| Sun et al. [[58]](#58) | 2020 |  |  |  |  |
+| Shim et al. [[59]](#59) | 2020 | FTP | Modbus/TCP, Ethernet/IP |  |  |
+| IPART [[60]](#60) | 2020 |  | Modbus, IEC104, Ethernet/IP |  |  |
 
 # Source Code [&uarr;](#table-of-contents)
 
@@ -228,6 +231,7 @@ Most papers do not provide the code used in the research. For the following pape
 | PIP [[1]](#1) | 2004 | https://web.archive.org/web/20090416234849/http://4tphi.net/~awalters/PI/PI.html |
 | ReverX [[25]](#25) | 2011 | https://github.com/jasantunes/reverx |
 | Netzob [[32]](#32) | 2012 | https://github.com/netzob/netzob |
+| PRISMA [[33]](#33) | 2012 | https://github.com/tammok/PRISMA/ |
 | PULSAR [[48]](#48) | 2015 | https://github.com/hgascon/pulsar |
 | Universal Radio Hacker [[55]](#55) | 2019 | https://github.com/jopohl/urh |
 
@@ -347,10 +351,12 @@ Y.-H. Goo, K.-S. Shim, M.-S. Lee, and M.-S. Kim, “Protocol Specification Extra
 J. Pohl and A. Noack, “Universal radio hacker: A suite for analyzing and attacking stateful wireless protocols,” Baltimore, MD, Aug. 2018, [Online]. Available: https://www.usenix.org/conference/woot18/presentation/pohl. 
 J. Pohl and A. Noack, “Automatic wireless protocol reverse engineering,” Santa Clara, CA, Aug. 2019, [Online]. Available: https://www.usenix.org/conference/woot19/presentation/pohl.  [PDF](https://www.usenix.org/system/files/conference/woot18/woot18-paper-pohl.pdf)
 #### [56]
-C. Yang, C. Fu, Y. Qian, Y. Hong, G. Feng, and L. Han, “Deep Learning-Based Reverse Method of Binary Protocol,” in Security and Privacy in Digital Economy, vol. 1268, S. Yu, P. Mueller, and J. Qian, Eds. Singapore: Springer Singapore, 2020, pp. 606–624. 
+[1]X. Luo, D. Chen, Y. Wang, and P. Xie, “A Type-Aware Approach to Message Clustering for Protocol Reverse Engineering,” Sensors, vol. 19, no. 3, p. 716, Feb. 2019, doi: 10.3390/s19030716.  [PDF](https://www.mdpi.com/1424-8220/19/3/716/pdf)
 #### [57]
-F. Sun, S. Wang, C. Zhang, and H. Zhang, “Clustering of unknown protocol messages based on format comparison,” Computer Networks, vol. 179, p. 107296, Oct. 2020, doi: 10.1016/j.comnet.2020.107296. 
+C. Yang, C. Fu, Y. Qian, Y. Hong, G. Feng, and L. Han, “Deep Learning-Based Reverse Method of Binary Protocol,” in Security and Privacy in Digital Economy, vol. 1268, S. Yu, P. Mueller, and J. Qian, Eds. Singapore: Springer Singapore, 2020, pp. 606–624. 
 #### [58]
-K. Shim, Y. Goo, M. Lee, and M. Kim, “Clustering method in protocol reverse engineering for industrial protocols,” International Journal of Network Management, Jun. 2020, doi: 10.1002/nem.2126.  [PDF](https://nmlab.korea.ac.kr/publication/published.papers/2020/2020.06_Clustering_method_for_ICS-APRE-IJNM.pdf)
+F. Sun, S. Wang, C. Zhang, and H. Zhang, “Clustering of unknown protocol messages based on format comparison,” Computer Networks, vol. 179, p. 107296, Oct. 2020, doi: 10.1016/j.comnet.2020.107296. 
 #### [59]
+K. Shim, Y. Goo, M. Lee, and M. Kim, “Clustering method in protocol reverse engineering for industrial protocols,” International Journal of Network Management, Jun. 2020, doi: 10.1002/nem.2126.  [PDF](https://nmlab.korea.ac.kr/publication/published.papers/2020/2020.06_Clustering_method_for_ICS-APRE-IJNM.pdf)
+#### [60]
 X. Wang, K. Lv, and B. Li, “IPART: an automatic protocol reverse engineering tool based on global voting expert for industrial protocols,” International Journal of Parallel, Emergent and Distributed Systems, vol. 35, no. 3, pp. 376–395, May 2020, doi: 10.1080/17445760.2019.1655740. 
