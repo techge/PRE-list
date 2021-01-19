@@ -11,6 +11,10 @@ The collection is based on the following three surveys and got extended afterwar
 * J. Duchêne, C. Le Guernic, E. Alata, V. Nicomette, and M. Kaâniche, “State of the art of network protocol reverse engineering tools,” Journal of Computer Virology and Hacking Techniques, vol. 14, no. 1, pp. 53–68, Feb. 2018, doi: 10.1007/s11416-016-0289-8. [PDF](https://hal.inria.fr/hal-01496958/document)
 * B. D. Sija, Y.-H. Goo, K.-S. Shim, H. Hasanova, and M.-S. Kim, “A Survey of Automatic Protocol Reverse Engineering Approaches, Methods, and Tools on the Inputs and Outputs View,” Security and Communication Networks, vol. 2018, pp. 1–17, 2018, doi: 10.1155/2018/8370341. [PDF]https://www.hindawi.com/journals/scn/2018/8370341/abs/()
 
+Furthermore, there is a very extensive surveys which focuses on the methods and approaches of PRE tools that are based on network traces. The work of Kleber et al. is an excellent starting point to see what was already tried and for which use cases a method is working best.
+
+* S. Kleber, L. Maile, and F. Kargl, “Survey of Protocol Reverse Engineering Algorithms: Decomposition of Tools for Static Traffic Analysis,” IEEE Communications Surveys & Tutorials, vol. 21, no. 1, pp. 526–561, 2019, doi: 10.1109/COMST.2018.2867544. [PDF](https://oparu.uni-ulm.de/xmlui/bitstream/handle/123456789/11078/COMST2867544.pdf)
+
 Please help extending this collection by adding papers to the `tools.ods`.
 
 
