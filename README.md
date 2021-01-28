@@ -264,6 +264,7 @@ Most papers do not provide the code used in the research. For the following pape
 | Netzob [[34]](#34) | 2012 | https://github.com/netzob/netzob |
 | PRISMA [[35]](#35) | 2012 | https://github.com/tammok/PRISMA/ |
 | PULSAR [[50]](#50) | 2015 | https://github.com/hgascon/pulsar |
+| NEMESYS [[61]](#61) | 2018 | https://github.com/vs-uulm/nemesys |
 | Universal Radio Hacker [[63]](#63) | 2019 | https://github.com/jopohl/urh |
 
 # References [&uarr;](#table-of-contents)
