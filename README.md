@@ -292,7 +292,7 @@ M. Shevertalov and S. Mancoridis, “A reverse engineering tool for extracting p
 #### [11]
 Caballero, J., Song, D.: Rosetta: Extracting Protocol Semantics Using Binary Analysis with Applications to Protocol Replay and NAT Rewriting. Technical Report CMU-CyLab-07-014, Carnegie Mellon University, Pittsburgh (2007)
 #### [12]
-Z. Lin, X. Jiang, D. Xu, and X. Zhang, “Automatic protocol format reverse engineering through context-aware monitored execution,” in Proceedings of the 15th Symposium on Network and  Distributed System Security (NDSS ’08), February 2008.
+Z. Lin, X. Jiang, D. Xu, and X. Zhang, “Automatic protocol format reverse engineering through context-aware monitored execution,” in Proceedings of the 15th Symposium on Network and  Distributed System Security (NDSS ’08), February 2008. [PDF](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.120.2651&rep=rep1&type=pdf)
 #### [13]
 W. Cui, M. Peinado, K. Chen, H. J. Wang, and L. Irun-Briz, “Tupni: automatic reverse engineering of input formats,” in Proceedings of the 15th ACM Conference on Computer and Communications Security (CCS ’08), pp. 391–402, ACM, Alexandria, Va, USA, October 2008. [PDF](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/tupni-ccs08.pdf)
 #### [14]
@@ -300,13 +300,13 @@ K. Gopalratnam, S. Basu, J. Dunagan, and H. J. Wang, “Automatically extracting
 #### [15]
 Wang, R., Wang, X., Zhang, K., Li, Z.: Towards automatic reverse engineering of software security configurations. In: Proceedings of the 15th ACM Conference on Computer and Communications Security, CCS ’08, pp. 245–256. ACM, Limerick (2008). doi:10.1145/1455770.1455802
 #### [16]
-Z. Wang, X. Jiang, W. Cui, X. Wang, and M. Grace, “ReFormat: automatic reverse engineering of encrypted messages,” in Computer Security—ESORICS 2009. ESORICS 2009, M. Backes and P. Ning, Eds., vol. 5789 of Lecture Notes in Computer Science, pp. 200–215, Springer, Berlin, Germany, 2009.
+Z. Wang, X. Jiang, W. Cui, X. Wang, and M. Grace, “ReFormat: automatic reverse engineering of encrypted messages,” in Computer Security—ESORICS 2009. ESORICS 2009, M. Backes and P. Ning, Eds., vol. 5789 of Lecture Notes in Computer Science, pp. 200–215, Springer, Berlin, Germany, 2009. [PDF](https://link.springer.com/content/pdf/10.1007/978-3-642-04444-1_13.pdf)
 #### [17]
 P. M. Comparetti, G. Wondracek, C. Kruegel, and E. Kirda, “Prospex: protocol specification extraction,” in Proceedings of the 30th IEEE Symposium on Security and Privacy, pp. 110–125, Berkeley, Calif, USA, May 2009. [PDF](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.720.3272&rep=rep1&type=pdf)
 #### [18]
 M.-M. Xiao, S.-Z. Yu, and Y. Wang, “Automatic network protocol automaton extraction,” in Proceedings of the 3rd International Conference on Network and System Security (NSS ’09), pp. 336–343, October 2009.
 #### [19]
-A. Trifilo, S. Burschka, and E. Biersack, “Traffic to protocol reverse engineering,” in Proceedings of the IEEE Symposium on Computational Intelligence for Security and Defense Applications, pp. 1–8, July 2009.
+A. Trifilo, S. Burschka, and E. Biersack, “Traffic to protocol reverse engineering,” in Proceedings of the IEEE Symposium on Computational Intelligence for Security and Defense Applications, pp. 1–8, July 2009. [PDF](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.161.2189&rep=rep1&type=pdf)
 #### [20]
 J. Antunes and N. Neves, “Building an automaton towards reverse protocol engineering,” 2009, http://www.di.fc.ul.pt/∼nuno/PAPERS/INFORUM09.pdf.
 #### [21]
