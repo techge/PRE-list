@@ -3,7 +3,7 @@ PRE-list
 
 List of (automatic) protocol reverse engineering tools/methods/approaches for network protocols<br/>
 
-This is a collection of 69 scientific papers about (automatic) protocol reverse engineering (PRE) methods and tools. The papers are categorized into different groups so that it is more easy to get an overview of existing solutions based on the problem you want to tackle.<br/>
+This is a collection of 71 scientific papers about (automatic) protocol reverse engineering (PRE) methods and tools. The papers are categorized into different groups so that it is more easy to get an overview of existing solutions based on the problem you want to tackle.<br/>
 
 The collection is based on the following three surveys and got extended afterwards:
 
@@ -100,6 +100,8 @@ Please help extending this collection by adding papers to the `tools.ods`.
 | Sun et al. [[67]](#67) | 2020 | "To measure format similarity of unknown protocol messages in a proper granularity, we propose relative measurements, Token Format Distance (TFD) and Message Format Distance (MFD), based on core rules of Augmented Backus-Naur Form (ABND)." for clustering process Silhouette Coefficient and Dunn Index are used. density based cluster algorithm DBSCAN is used for clustering of messages |
 | Shim et al. [[68]](#68) | 2020 | Follow up on Goo et al. 2019 |
 | IPART [[69]](#69) | 2020 | Using extended voting expert algorithm to infer boundaries of fields, otherwise using three phase which are tokenizing, classifying and clustering. |
+| NEMETYL [[70]](#70) | 2020 | Please review |
+| NetPlier [[71]](#71) | 2021 | Probabilistic method for network trace based protocol reverse engineering. |
 
 # Input and Output [&uarr;](#table-of-contents)
 
@@ -179,6 +181,8 @@ PFSM: output is protocol finite state machine (describing semantic/sequential lo
 | Sun et al. [[67]](#67) | 2020 |  |  |  |  |  |
 | Shim et al. [[68]](#68) | 2020 | &#10004; |  | &#10004; |  |  |
 | IPART [[69]](#69) | 2020 | &#10004; |  | &#10004; |  |  |
+| NEMETYL [[70]](#70) | 2020 | &#10004; |  | &#10004; |  |  |
+| NetPlier [[71]](#71) | 2021 | &#10004; |  |  |  |  |
 
 # Tested protocols [&uarr;](#table-of-contents)
 
@@ -253,6 +257,8 @@ PFSM: output is protocol finite state machine (describing semantic/sequential lo
 | Sun et al. [[67]](#67) | 2020 |  |  |  |  |
 | Shim et al. [[68]](#68) | 2020 | FTP | Modbus/TCP, Ethernet/IP |  |  |
 | IPART [[69]](#69) | 2020 |  | Modbus, IEC104, Ethernet/IP |  |  |
+| NEMETYL [[70]](#70) | 2020 |  |  |  |  |
+| NetPlier [[71]](#71) | 2021 |  |  |  |  |
 
 # Source Code [&uarr;](#table-of-contents)
 
@@ -266,6 +272,7 @@ Most papers do not provide the code used in the research. For the following pape
 | PULSAR [[50]](#50) | 2015 | https://github.com/hgascon/pulsar |
 | NEMESYS [[61]](#61) | 2018 | https://github.com/vs-uulm/nemesys |
 | Universal Radio Hacker [[63]](#63) | 2019 | https://github.com/jopohl/urh |
+| NetPlier [[71]](#71) | 2021 | https://github.com/netplier-tool/NetPlier/ |
 
 # References [&uarr;](#table-of-contents)
 
@@ -288,7 +295,7 @@ W. Cui, J. Kannan, and H. J. Wang, “Discoverer: Automatic protocol reverse eng
 #### [9]
 J. Caballero, H. Yin, Z. Liang, and D. Song, “Polyglot: automatic extraction of protocol message format using dynamic binary analysis,” in Proceedings of the 14th ACM Conference on Computer and Communications Security (CCS ’07), pp. 317–329, ACM, November 2007. [PDF](https://people.eecs.berkeley.edu/~dawnsong/papers/2007%20p317-caballero.pdf)
 #### [10]
-M. Shevertalov and S. Mancoridis, “A reverse engineering tool for extracting protocols of networked applications,” in Proceedings of the 14th Working Conference on Reverse Engineering (WCRE ’07), pp. 229–238, October 2007.
+M. Shevertalov and S. Mancoridis, “A reverse engineering tool for extracting protocols of networked applications,” in Proceedings of the 14th Working Conference on Reverse Engineering (WCRE ’07), pp. 229–238, October 2007. [PDF](http://www.cs.drexel.edu/~spiros/papers/WCRE07.pdf)
 #### [11]
 Caballero, J., Song, D.: Rosetta: Extracting Protocol Semantics Using Binary Analysis with Applications to Protocol Replay and NAT Rewriting. Technical Report CMU-CyLab-07-014, Carnegie Mellon University, Pittsburgh (2007)
 #### [12]
@@ -325,7 +332,7 @@ S. Gorbunov and A. Rosenbloom, “Autofuzz: Automated network protocol fuzzing f
 #### [27]
 J. Antunes, N. Neves, and P. Verissimo, “Reverse engineering of protocols from network traces,” in Proceedings of the 18th Working Conference on Reverse Engineering (WCRE ’11), pp. 169–178, October 2011. [PDF](https://www.researchgate.net/profile/Joao_Antunes3/publication/221200255_Reverse_Engineering_of_Protocols_from_Network_Traces/links/0fcfd50c3eb9574ac4000000.pdf)
 #### [28]
-Y. Wang, Z. Zhang, D. D. Yao, B. Qu, and L. Guo, “Inferring protocol state machine from network traces: a probabilistic approach,” in Proceedings of the 9th Applied Cryptography and Network Security International Conference (ACNS ’11), pp. 1–18, 2011.
+Y. Wang, Z. Zhang, D. D. Yao, B. Qu, and L. Guo, “Inferring protocol state machine from network traces: a probabilistic approach,” in Proceedings of the 9th Applied Cryptography and Network Security International Conference (ACNS ’11), pp. 1–18, 2011. [PDF](https://link.springer.com/content/pdf/10.1007/978-3-642-21554-4_1.pdf)
 #### [29]
 Y. Wang, X. Li, J. Meng, Y. Zhao, Z. Zhang, and L. Guo, “Biprominer: automatic mining of binary protocol features,” in Proceedings of the 12th International Conference on Parallel and Distributed Computing, Applications and Technologies (PDCAT ’11), pp. 179–184, October 2011.
 #### [30]
@@ -340,7 +347,7 @@ Z. Zhang, Q.-Y. Wen, and W. Tang, “Mining protocol state machines by interacti
 G. Bossert, F. Guihéry, and G. Hiet, “Towards automated protocol reverse engineering using semantic information,” in Proceedings of the 9th ACM Symposium on Information, Computer and Communications Security, Kyoto, Japan, June 2014.
 G. Bossert and F. Guihéry, “Reverse and simulate your enemy botnet C&C,” in Proceedings of the Mapping a P2P Botnet with Netzob, Black Hat 2012, Abu Dhabi, UAE, December 2012. [PDF](https://www.amossys.fr/upload/publication.pdf)
 #### [35]
-Krueger, T., Gascon, H., Krmer, N., Rieck, K.: Learning stateful models for network honeypots. In: Proceedings of the 5th ACM Workshop on Security and Artificial Intelligence, AISec ’12, pp. 37–48. ACM, New York, NY (2012). doi:10.1145/2381896.2381904
+Krueger, T., Gascon, H., Krmer, N., Rieck, K.: Learning stateful models for network honeypots. In: Proceedings of the 5th ACM Workshop on Security and Artificial Intelligence, AISec ’12, pp. 37–48. ACM, New York, NY (2012). [PDF](https://hugogascon.com/publications/2012a-aisec.pdf)
 #### [36]
 Caballero, J., Grieco, G., Marron, M., Lin, Z., Urbina, D.: ARTISTE: Automatic Generation of Hybrid Data Structure Signatures from Binary Code Executions. Technical Report TR-IMDEA-SW-2012-001, IMDEA Software Institute, Madrid (2012)
 #### [37]
@@ -410,3 +417,7 @@ F. Sun, S. Wang, C. Zhang, and H. Zhang, “Clustering of unknown protocol messa
 K. Shim, Y. Goo, M. Lee, and M. Kim, “Clustering method in protocol reverse engineering for industrial protocols,” International Journal of Network Management, Jun. 2020, doi: 10.1002/nem.2126.  [PDF](https://nmlab.korea.ac.kr/publication/published.papers/2020/2020.06_Clustering_method_for_ICS-APRE-IJNM.pdf)
 #### [69]
 X. Wang, K. Lv, and B. Li, “IPART: an automatic protocol reverse engineering tool based on global voting expert for industrial protocols,” International Journal of Parallel, Emergent and Distributed Systems, vol. 35, no. 3, pp. 376–395, May 2020, doi: 10.1080/17445760.2019.1655740. 
+#### [70]
+S. Kleber, R. W. van der Heijden, and F. Kargl, “Message Type Identification of Binary Network Protocols using Continuous Segment Similarity,” in IEEE INFOCOM 2020 - IEEE Conference on Computer Communications, Toronto, ON, Canada, Jul. 2020, pp. 2243–2252. doi: 10.1109/INFOCOM41043.2020.9155275.  [PDF](https://arxiv.org/pdf/2002.03391)
+#### [71]
+Ye, Yapeng, Zhuo Zhang, Fei Wang, Xiangyu Zhang, and Dongyan Xu. “NetPlier: Probabilistic Network Protocol Reverse Engineering from Message Traces.” In NDSS. 2021. [PDF](https://www.ndss-symposium.org/wp-content/uploads/ndss2021_4A-5_24531_paper.pdf)
